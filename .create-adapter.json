@@ -1,0 +1,43 @@
+{
+    "cli": true,
+    "target": "directory",
+    "adapterName": "jsonconfig-demo",
+    "title": "jsonConfig demo only",
+    "description": "This adapter is a demo for json based config only.",
+    "keywords": [
+        "jsonConfig demo",
+        "demo adapter"
+    ],
+    "expert": "yes",
+    "features": [
+        "adapter"
+    ],
+    "adminFeatures": [],
+    "type": "general",
+    "startMode": "daemon",
+    "connectionType": "local",
+    "dataSource": "assumption",
+    "connectionIndicator": "yes",
+    "language": "JavaScript",
+    "nodeVersion": "14",
+    "adminUi": "json",
+    "tools": [
+        "ESLint",
+        "type checking"
+    ],
+    "releaseScript": "yes",
+    "devServer": "yes",
+    "devServerPort": 8181,
+    "indentation": "Space (4)",
+    "quotes": "single",
+    "es6class": "yes",
+    "authorName": "mcm1957",
+    "authorGithub": "mcm1957",
+    "authorEmail": "mcm57@gmx.at",
+    "gitRemoteProtocol": "HTTPS",
+    "gitCommit": "no",
+    "defaultBranch": "master",
+    "license": "MIT License",
+    "dependabot": "yes",
+    "creatorVersion": "2.3.0"
+}

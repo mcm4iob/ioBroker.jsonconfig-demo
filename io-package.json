@@ -1,0 +1,107 @@
+{
+    "common": {
+        "name": "jsonconfig-demo",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "jsonConfig demo only",
+        "titleLang": {
+            "en": "jsonConfig demo only",
+            "de": "Nur jsonConfig-Demo",
+            "ru": "только демо jsonconfig",
+            "pt": "demonstração jsonConfig apenas",
+            "nl": "alleen jsonConfig-demo",
+            "fr": "Démo jsonConfig uniquement",
+            "it": "jsonConfig solo demo",
+            "es": "jsonConfig demostración solamente",
+            "pl": "Tylko wersja demonstracyjna jsonConfig",
+            "zh-cn": "jsonConfig 仅演示"
+        },
+        "desc": {
+            "en": "This adapter is a demo for json based config only.",
+            "de": "Dieser Adapter ist nur eine Demo für die json-basierte Konfiguration.",
+            "ru": "Этот адаптер является демонстрацией только для конфигурации на основе json.",
+            "pt": "Este adaptador é uma demonstração apenas para configuração baseada em json.",
+            "nl": "Deze adapter is alleen een demo voor op json gebaseerde configuratie.",
+            "fr": "Cet adaptateur est une démo pour la configuration basée sur json uniquement.",
+            "it": "Questo adattatore è una demo solo per la configurazione basata su json.",
+            "es": "Este adaptador es una demostración solo para la configuración basada en json.",
+            "pl": "Ten adapter jest wersją demonstracyjną tylko dla konfiguracji opartej na formacie json.",
+            "zh-cn": "此适配器仅是基于 json 的配置的演示。"
+        },
+        "authors": [
+            "mcm1957 <mcm57@gmx.at>"
+        ],
+        "keywords": [
+            "jsonConfig demo",
+            "demo adapter"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "jsonconfig-demo.png",
+        "enabled": true,
+        "messagebox": true,
+        "extIcon": "https://raw.githubusercontent.com/mcm1957/ioBroker.jsonconfig-demo/master/admin/jsonconfig-demo.png",
+        "readme": "https://github.com/mcm1957/ioBroker.jsonconfig-demo/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "general",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "assumption",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
