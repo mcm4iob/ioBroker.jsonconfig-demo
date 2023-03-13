@@ -26,6 +26,8 @@ class JsonconfigDemo extends utils.Adapter {
         // this.on('objectChange', this.onObjectChange.bind(this));
         this.on('message', this.onMessage.bind(this));
         this.on('unload', this.onUnload.bind(this));
+
+        this.sequence=0;
     }
 
     /**
@@ -150,11 +152,11 @@ class JsonconfigDemo extends utils.Adapter {
                 this.log.info('send command');
 
                 // Send response in callback if required
-                if (obj.callback) this.sendTo(obj.from, obj.command, {text:'Message received'}, obj.callback);
+                this.sequence++;
+                if (obj.callback) this.sendTo(obj.from, obj.command, `Message received (${this.sequence})`, obj.callback);
             }
         }
     }
-
 }
 
 if (require.main !== module) {
