@@ -54,6 +54,46 @@
             }
         },
 
+        "tab_2":{
+            "type": "panel",
+            "label": "Static (output only) Elements",            
+            "items": {
+                // pattern - read only field with pattern like 'https://${data.ip}:${data.port}' (will not be saved in config) Text input with read only flag, that shows pattern.
+                "patternHdr": {
+                    "type": "header",
+                    "text": "PATTERN",
+                    "size": 2
+                },
+                "patternInput":{
+                    "type":"text",
+                    "label":"Text",
+                    "help":"Enter text to be included into pattern output"
+                },
+                "pattern" :{
+                    "type": "pattern",
+                    "copyToClipboard": true,
+                    "pattern": "This s static pattern field with text [${data.patternInput}] from above",
+                    "sm":6,
+                    "md":6,
+                    "lg":6,
+                    "xs":6,
+                    "newLine": true
+                },
+
+                // staticText - static text like description
+                "staticTextHdr": {
+                    "type": "header",
+                    "text": "STATIC TEXT",
+                    "size": 2
+                },
+                "staticText": {
+                    "type":"staticText",
+                    "text": "This is a static Text", // same as label
+                    "newLine": true
+                }
+            }
+        },
+
         "tab_3":{
             "type": "panel",
             "label": "Selection Elements",
@@ -63,6 +103,13 @@
                     "type": "header",
                     "text": "COORDINATES",
                     "size": 2
+                },
+                "idx_i01x": {
+                    "type":"staticText",
+                    "text": "WARNING: element COORDINATES currently has some known issues, i.e delayed saving",
+                    "style": {
+                        "color": "red"
+                    }
                 },
                 "coordinates1Txt": {
                     "type":"staticText",
@@ -75,10 +122,10 @@
                     "useSystemName":false,
                     "newLine": true
                 },
-//                "coordinates1val": {
-//                    "type":"pattern",
-//                    "pattern":"stored value is ${data.coordinates1}"
-//                },
+                "coordinates1val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.coordinates1}"
+                },
                 "coordinates2Txt": {
                     "type":"staticText",
                     "text": "COORDINATES displays coordinates (with autoInit)",
@@ -90,10 +137,10 @@
                     "useSystemName":false,
                     "newLine": true
                 },
-//                "coordinates2val": {
-//                    "type":"pattern",
-//                    "pattern":"stored value is ${data.coordinates2}"
-//                },
+                "coordinates2val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.coordinates2}"
+                },
 //                "coordinates3Txt": {
 //                    "type":"staticText",
 //                    "text": "COORDINATES displays coordinates (with names and useSystemSettings)",
@@ -164,28 +211,6 @@
                 "instance3val": {
                     "type":"pattern",
                     "pattern":"stored value is ${data.instance3}"
-                }
-            }
-        },
-
-        "tab_2":{
-            "type": "panel",
-            "label": "TAB-2",            
-            "items": {
-                // pattern - read only field with pattern like 'https://${data.ip}:${data.port}' (will not be saved in config) Text input with read only flag, that shows pattern.
-                "pattern" :{
-                    "type": "pattern",
-                    "copyToClipboard": true,         // if true - show button
-                    "pattern": "tbd",                // my pattern
-                    "newLine": true
-                },
-
-                // staticText - static text like description
-                "staticText": {
-                    "type":"staticText",
-                    "label": "Static Text",         // multi-language text
-                    "text": "This is a static Text", // same as label
-                    "newLine": true
                 }
             }
         },
