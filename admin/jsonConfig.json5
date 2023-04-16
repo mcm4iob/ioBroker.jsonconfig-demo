@@ -104,7 +104,7 @@
                     "text": "COORDINATES",
                     "size": 2
                 },
-                "idx_i01x": {
+                "coordinatesWarning": {
                     "type":"staticText",
                     "text": "WARNING: element COORDINATES currently has some known issues, i.e delayed saving",
                     "style": {
@@ -211,7 +211,69 @@
                 "instance3val": {
                     "type":"pattern",
                     "pattern":"stored value is ${data.instance3}"
-                }
+                },
+
+                // timepicker
+                "datePickerHdr": {
+                    "type": "header",
+                    "text": "DATEPICKER",
+                    "size": 2
+                },
+                "datePickerWarning": {
+                    "type":"staticText",
+                    "text": "WARNING: element DATEPICKER currently has some known issues, i.e data is stored only after change of contents",
+                    "style": {
+                        "color": "red"
+                    }
+                },
+//                "datePickerTxt": {
+//                    "type":"staticText",
+//                    "text": "INSTANCE select an instance of adapter admin (option short)",
+//                    "newLine": true
+//                },
+                "datePicker1": {
+                    "type":"datePicker",
+                    "newLine": true
+                },
+                "datePicker1val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.datePicker1}",
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4
+                },
+
+                // timepicker
+                "timePicker1Hdr": {
+                    "type": "header",
+                    "text": "TIMEPICKER",
+                    "size": 2
+                },
+                "timePickerWarning": {
+                    "type":"staticText",
+                    "text": "WARNING: element TIMEPICKER currently has some known issues, i.e data is stored only after change of contents",
+                    "style": {
+                        "color": "red"
+                    }
+                },
+//                "timepickerTxt": {
+//                    "type":"staticText",
+//                    "text": "INSTANCE select an instance of adapter admin (option short)",
+//                    "newLine": true
+//                },
+                "timePicker1": {
+                    "type":"timePicker",
+                    "newLine": true
+                },
+                "timePicker1val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.timePicker1}",
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4
+                },
             }
         },
 
