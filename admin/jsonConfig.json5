@@ -968,6 +968,36 @@
                     "pattern":"stored value is ${data.port}"
                 },
 
+                // select
+                "selectHdr": {
+                    "type": "header",
+                    "text": "SELECT",
+                    "size": 2
+                },
+                "selectTxt": {
+                    "type":"staticText",
+                    "text": "select a value from the configured list.",
+                    "newLine": true
+                },
+                "select": {
+                    "type":"select",
+                    "label":"Please select",
+                    "options": [
+                        {"label": "option 1", "value": 1},
+                        {"label": "option 2", "value": 2},
+                        {"label": "option 3", "value": 3}
+                    ],
+                    "sm":3,
+                    "md":3,
+                    "lg":3,
+                    "xs":3,
+                    "newLine": true
+                },
+                "selectVal": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.select}"
+                },
+
                 // setState - button that set instance's state
                 "setStateHdr": {
                     "type": "header",
@@ -1182,7 +1212,7 @@
                     "xs":2,
                     "newLine": true
                 },
-                "idx_a01x": {
+                "idx_a02x": {
                     "type":"staticText",
                     "text": "see tab INPUT",
                     "style": {
@@ -1660,6 +1690,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_s01x": {
+                    "type":"staticText",
+                    "text": "see tab INPUT",
+                    "style": {
+                        "color": "green"
+                    }
                 },
 
                 // selectSendTo
