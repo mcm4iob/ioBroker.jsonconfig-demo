@@ -44,7 +44,8 @@ class JsonconfigDemo extends utils.Adapter {
         this.log.info('config option1: ' + this.config.option1);
         this.log.info('config option2: ' + this.config.option2);
 
-        /*
+        /*onMess
+
         For every state in the system there has to be also an object of type state
         Here a simple template for a boolean variable named "testVariable"
         Because every adapter instance uses its own unique namespace variable names can't collide with other adapters variables
@@ -147,13 +148,35 @@ class JsonconfigDemo extends utils.Adapter {
      */
     onMessage(obj) {
         if (typeof obj === 'object' && obj.message) {
-            if (obj.command === 'send') {
-                // e.g. send email or pushover or whatever
-                this.log.info('send command');
-
+            this.log.info(`command received ${obj.command}`);
+            if (obj.command === 'textSendTo1') {
                 // Send response in callback if required
+                this.log.info(`textSendTo1 - ${JSON.stringify(obj)}`);
                 this.sequence++;
                 if (obj.callback) this.sendTo(obj.from, obj.command, `Message received (${this.sequence})`, obj.callback);
+            }
+
+            if (obj.command === 'sendTo1') {
+                // Send response in callback if required
+                this.log.info(`sendTo1 - ${JSON.stringify(obj)}`);
+                if (obj.callback) this.sendTo(obj.from, obj.command,
+                    { native: { sendTo1Ret: `${obj.message.data1} / ${obj.message.data2}`}},
+                    obj.callback);
+            }
+
+            if (obj.command === 'sendTo2') {
+                // Send response in callback if required
+                this.log.info(`sendTo1 - ${JSON.stringify(obj)}`);
+                if (obj.callback) {
+                    if (obj.message.data == 0)
+                        this.sendTo(obj.from, obj.command,
+                            {error: "FAIL - This text describes some error"},
+                            obj.callback);
+                    else
+                        this.sendTo(obj.from, obj.command,
+                            {result: "OK - This is some text describing the result"},
+                            obj.callback);
+                }
             }
         }
     }

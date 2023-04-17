@@ -1166,17 +1166,111 @@
                 }
             }
         },
+
         "tab_5":{
             "type": "panel",
-            "label": "TAB-2",            
+            "label": "SEND TO",            
             "items": {
-                "testTest": {
+                "introSendToTxt": {
+                    "type":"staticText",
+                    "text": "Check adpater log for messages transmitted to adapoter",
+                    "newLine": true
+                },
+                "introSendToWarning": {
+                    "type":"staticText",
+                    "text": "WARNING: all sendTo elements requires a running adapter instance",
+                    "hidden": "_alive",
+                    "newLine": true
+                },                                
+
+                "sendToHdr": {
+                    "type": "header",
+                    "text": "SENDTO",
+                    "size": 2
+                },
+                "SendTo1Txt": {
+                    "type":"staticText",
+                    "text": "sendTo send 2 textfiled contents to adapter. Result is filled into third field.",
+                    "newLine": true
+                },
+                "sendTo1a": {
+                    "type": "text",
+                    "label": "Text 1",
+                    "default":"Text #1",
+                    "newLine":true
+                },
+                "sendTo1b": {
+                    "type": "text",
+                    "label": "Text 1",
+                    "default":"Text #2"
+                },
+                "sendTo1": {
+                    "type": "sendTo",
+                    "label": "send It",
+                    "variant": "outlined",
+                    "showProcess": true,
+                    "command": "sendTo1",
+                    "jsonData": "{ \"data1\": \"${data.sendTo1a}\", \"data2\": \"${data.sendTo1b}\" }",
+                    "useNative": true
+                },
+                "sendTo1Ret": {
+                    "type": "text",
+                    "label": "Result",
+                    "readOnly": true,
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4,
+                    "newLine":true
+                },
+                "SendTo2Txt": {
+                    "type":"staticText",
+                    "text": "select resulttype and send it to adapter.",
+                    "newLine": true
+                },
+                "sendTo2a": {
+                    "type": "select",
+                    "label": "Please select",
+                    "options":[ 
+                        {"label":"OK", "value":1},
+                        {"label":"FAIL", "value":0}
+                    ],
+                    "sm":3,
+                    "md":3,
+                    "lg":3,
+                    "xs":3,
+                    "newLine":true
+                },
+                "sendTo2": {
+                    "type": "sendTo",
+                    "label": "send It",
+                    "variant": "outlined",
+                    "showProcess": true,
+                    "command": "sendTo2",
+                    "jsonData": "{ \"data\": \"${data.sendTo2a}\"}"
+                },
+
+                "textSendToHdr": {
+                    "type": "header",
+                    "text": "TEXTSENDTO",
+                    "size": 2
+                },
+                "textSendTo1Txt": {
+                    "type":"staticText",
+                    "text": "textSendTo displays a static text returned by adapzter. It will update whenever checkbox is clicked",
+                    "newLine": true
+                },
+                "textSendTo1c":{
+                    "type": "checkbox",
+                    "newLine":true
+                },
+                "textSendTo1":{
                     "type": "textSendTo",
                     "label": "lblStationId",
-                    "command": "send",
+                    "command": "textSendTo1",
                     "jsonData": "{\"username\": \"aaa\", \"password\": \"bbb\" }",
-                    "alsoDependsOn": ["option2"]
-                }
+                    "alsoDependsOn": ["textSendTo1c"]
+                },
             }
         },
 
@@ -1868,6 +1962,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_t04x": {
+                    "type":"staticText",
+                    "text": "see tab SEND TO",
+                    "style": {
+                        "color": "green"
+                    }
                 },
 
                 // user - Select user from system.user. (With color and icon)
