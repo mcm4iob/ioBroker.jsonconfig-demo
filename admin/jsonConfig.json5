@@ -686,7 +686,7 @@
                     "default":false,
                     "newLine": true
                 },
-                "checkbox1val": {
+                "checkbox1Val": {
                     "type":"pattern",
                     "pattern":"stored value is ${data.checkbox1}"
                 },
@@ -774,6 +774,13 @@
                     "text": "JSON",
                     "size": 2
                 },
+                "jsonWarning": {
+                    "type":"staticText",
+                    "text": "WARNING: functionality of element JSON currently under investigation",
+                    "style": {
+                        "color": "red"
+                    }
+                },
                 "jsonTxt": {
                     "type":"staticText",
                     "text": "configure json data",
@@ -792,6 +799,101 @@
                     "md":8,
                     "lg":8,
                     "xs":8
+                },
+
+                // number
+                "numberHdr": {
+                    "type": "header",
+                    "text": "NUMBER",
+                    "size": 2
+                },
+                "number1Txt": {
+                    "type":"staticText",
+                    "text": "element to input a number",
+                    "newLine": true
+                },
+                "number1": {
+                    "type": "number",
+                    "label": "number",
+                    "newLine": true
+                },
+                "number1Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.number1}"
+                },
+                "number2Txt": {
+                    "type":"staticText",
+                    "text": "element to input a number limited to -5 to +150 ",
+                    "newLine": true
+                },
+                "number2": {
+                    "type": "number",
+                    "label": "number",
+                    "min":-5,
+                    "max":150,
+                    "newLine": true
+                },
+                "number2Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.number2}"
+                },
+                "number3Txt": {
+                    "type":"staticText",
+                    "text": "element to input a number with step size 0,001",
+                    "newLine": true
+                },
+                "number3": {
+                    "type": "number",
+                    "label": "number",
+                    "min":-5,
+                    "step":0.001,
+                    "newLine": true
+                },
+                "number3Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.number3}"
+                },
+
+                // password (repeat - if repeat password must be shown with the same width settings)  
+                "passwordHdr": {
+                    "type": "header",
+                    "text": "PASSWORD",
+                    "size": 2
+                },
+                "password1Txt": {
+                    "type":"staticText",
+                    "text": "element to input a password",
+                    "newLine": true
+                },
+                "password": {
+                    "type": "password",
+                    "label": "password",
+                    "newLine": true
+                },
+                "password1Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.password1}"
+                },
+                "password2Txt": {
+                    "type":"staticText",
+                    "text": "element to input a password, add repeat field and visible button",
+                    "newLine": true
+                },
+                "password2": {
+                    "type": "password",
+                    "label": "password",
+                    "repeat": true,
+                    "visible": true,
+                    "newLine": true
+                },
+                "password2Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.password2}"
+                },
+                "passwordInfo": {
+                    "type":"staticText",
+                    "text": "Note that passwords must be store encrypted using io-package.json config",
+                    "newLine": true
                 },
 
                 // port - Special input for ports. It checks automatically if port is used by other instances and shows warning
@@ -1191,6 +1293,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_j01x": {
+                    "type":"staticText",
+                    "text": "see tab INPUT",
+                    "style": {
+                        "color": "red"
+                    }
+                },
 
                 // language - select language
                 "idx_l01": {
@@ -1219,6 +1328,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_n01x": {
+                    "type":"staticText",
+                    "text": "see tab INPUT",
+                    "style": {
+                        "color": "green"
+                    }
                 },
 
                 // objectId - object ID - show it with name, color and icon
