@@ -919,21 +919,180 @@
                 "portVal": {
                     "type":"pattern",
                     "pattern":"stored value is ${data.port}"
+                },
+
+                // setState - button that set instance's state
+                "setStateHdr": {
+                    "type": "header",
+                    "text": "SET STATE",
+                    "size": 2
+                },
+                "setState1Txt": {
+                    "type":"staticText",
+                    "text": "button that sets an instance's state demo_state_1 to 'Demo val' (fixed at jsonconfig-demo.0)",
+                    "newLine": true
+                },
+                "setState1": {
+                    "type":"setState",
+                    "label":"set",
+                    "id": "jsonconfig-demo.0.test.demo_1",
+                    "ack": true,
+                    "val":"Demo value",
+                    "newLine": true
+                },
+                "setState2Txt": {
+                    "type":"staticText",
+                    "text": "button that sets an instance's state demo_state_2 to text entered by user (fixed at jsonconfig-demo.0)",
+                    "newLine": true
+                },
+                "setState2t": {
+                    "type":"text",
+                    "label":"text",
+                    "newLine": true
+                },
+                "setState2": {
+                    "type":"setState",
+                    "label":"set it",
+                    "id": "jsonconfig-demo.%INSTANCE%.test.demo_2",
+                    "ack": false,
+                    "val":"data.setState2t"
+                },
+
+                // slider - show slider (only Admin6)              
+                "sliderHdr": {
+                    "type": "header",
+                    "text": "SLIDER",
+                    "size": 2
+                },
+                "sliderWarning": {
+                    "type":"staticText",
+                    "text": "WARNING: element SLIDER currently has some known issues, i.e range does not work as expected",
+                    "style": {
+                        "color": "red"
+                    }
+                },
+                "slider1Txt": {
+                    "type":"staticText",
+                    "text": "shift slider to select a value, defaultrange is 0 to 100",
+                    "newLine": true
+                },
+                "slider1": {
+                    "type":"slider",
+                    "label":"select by shifting",
+                    "newLine": true
+                },
+                "slider1Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.slider1}"
+                },
+                "slider2Txt": {
+                    "type":"staticText",
+                    "text": "shift slider to select a value, different range (-10 to +80, step 0,1)",
+                    "newLine": true
+                },
+                "slider2": {
+                    "type":"slider",
+                    "label":"select by shifting",
+                    "min": -25,
+                    "max": 80,
+                    "step":0.1,
+                    "newLine": true
+                },
+                "slider2Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.slider2}"
+                },
+
+                // text - Text component
+                "textHdr": {
+                    "type": "header",
+                    "text": "TEXT",
+                    "size": 2
+                },
+                "text1Txt": {
+                    "type":"staticText",
+                    "text": "standard textfield for datat input",
+                    "newLine": true
+                },
+                "text1": {
+                    "type":"text",
+                    "label":"Textinput",
+                    "newLine": true
+                },
+                "text1Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.text1}"
+                },
+                "text2Txt": {
+                    "type":"staticText",
+                    "text": "textfields can be disabled and hidden",
+                    "newLine": true
+                },
+                "text2c": {
+                    "type":"checkbox",
+                    "label":"click to enable",
+                    "newLine": true
+                },
+                "text2": {
+                    "type":"text",
+                    "label":"Textinput",
+                    "disabled":"!!data.text2c"
+                },
+                "text2Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.text2}"
+                },
+                "text3c": {
+                    "type":"checkbox",
+                    "label":"click to hide",
+                    "newLine": true
+                },
+                "text3": {
+                    "type":"text",
+                    "label":"Textinput",
+                    "hidden":"data.text3c",
+                    "hideOnlyControl":true
+                },
+                "text3Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.text3}"
+                },
+                "text4Txt": {
+                    "type":"staticText",
+                    "text": "Textfields can be readonly",
+                    "newLine": true
+                },
+                "text4": {
+                    "type":"text",
+                    "label":"Textinput",
+                    "readOnly":true,
+                    "default":"some default text"
+                },
+                "text4Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.text4}"
+                },
+                "text5Txt": {
+                    "type":"staticText",
+                    "text": "Multiline textfields are possible too (here 3 to 7 rows)",
+                    "newLine": true
+                },
+                "text5": {
+                    "type":"text",
+                    "label":"Textinput",
+                    "minRows":3,
+                    "maxRows":7
+                },
+                "text5Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.text5}"
                 }
             }
         },
-
         "tab_5":{
             "type": "panel",
             "label": "TAB-2",            
             "items": {
-                // standard checkboy
-                "option1": {
-                    "type": "checkbox",
-                    "label": "option1",
-                    "newLine": true
-                },
-
                 "testTest": {
                     "type": "textSendTo",
                     "label": "lblStationId",
@@ -1333,7 +1492,7 @@
                     "type":"staticText",
                     "text": "see tab INPUT",
                     "style": {
-                        "color": "green"
+                        "color": "red"
                     }
                 },
 
@@ -1365,6 +1524,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_p01x": {
+                    "type":"staticText",
+                    "text": "see all tabs",
+                    "style": {
+                        "color": "green"
+                    }
+                },
 
                 // password (repeat - if repeat password must be shown with the same width settings)  
                 "idx_p02": {
@@ -1376,6 +1542,14 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_p02x": {
+                    "type":"staticText",
+                    "text": "see tab INPUT",
+                    "style": {
+                        "color": "green"
+                    }
+                },
+
 
                 // pattern - read only field with pattern like 'https://${data.ip}:${data.port}' (will not be saved in config)
                 "idx_p03": {
@@ -1467,6 +1641,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_s04x": {
+                    "type":"staticText",
+                    "text": "see tab INPUT",
+                    "style": {
+                        "color": "green"
+                    }
+                },
 
                 // slider - show slider (only Admin6)              
                 "idx_s05": {
@@ -1477,6 +1658,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_s05x": {
+                    "type":"staticText",
+                    "text": "see tab INPUT",
+                    "style": {
+                        "color": "red"
+                    }
                 },
 
                 // staticImage - static image
@@ -1555,6 +1743,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_t02x": {
+                    "type":"staticText",
+                    "text": "see main configuration",
+                    "style": {
+                        "color": "green"
+                    }
+                },
 
                 // text - Text component
                 "idx_t03": {
@@ -1565,6 +1760,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_t03x": {
+                    "type":"staticText",
+                    "text": "see tab INPUT",
+                    "style": {
+                        "color": "green"
+                    }
                 },
 
                 // textSendTo
