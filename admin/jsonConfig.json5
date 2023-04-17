@@ -667,6 +667,53 @@
             "type": "panel",
             "label": "INPUT",            
             "items": {
+                // autocomplete
+                "autocompleteHdr": {
+                    "type": "header",
+                    "text": "AUTOCOMPLETE",
+                    "size": 2
+                },
+                "autocomplete1Txt": {
+                    "type":"staticText",
+                    "text": "Standard autocomplete",
+                    "newLine": true
+                },
+                "autocomplete1": {
+                    "type": "autocomplete",
+                    "label": "Simple autocomplete",
+                    "options":["value1", "value2", "value3"],
+                    "freeSolo": false,
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4,
+                    "newLine": true
+                },
+                "autocomplete1Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.autocomplete1}"
+                },
+                "autocomplete2Txt": {
+                    "type":"staticText",
+                    "text": "autocomplete with free text",
+                    "newLine": true
+                },
+                "autocomplete2": {
+                    "type": "autocomplete",
+                    "label": "Simple autocomplete",
+                    "options":[{"label":"Option 1", "value":1}, {"label":"No Option", "value":2}, "SomeText"],
+                    "freeSolo": true,
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4,
+                    "newLine": true
+                },
+                "autocomplete2Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.autocomplete2}"
+                },
+
                 // standard checkbox
                 "checkboxHdr": {
                     "type": "header",
@@ -1125,7 +1172,6 @@
                     }
                 },
 
-
                 // autocomplete
                 "idx_a02": {
                     "type":"staticText",
@@ -1135,6 +1181,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_a01x": {
+                    "type":"staticText",
+                    "text": "see tab INPUT",
+                    "style": {
+                        "color": "green"
+                    }
                 },
 
                 // autocompleteSendTo`
