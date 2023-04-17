@@ -4,28 +4,8 @@
     "items": {
         "tab_1":{
             "type": "panel",
-            "label": "Static Infos",
+            "label": "Static",            
             "items": {
-                // alive - just indication if the instance is alive, and it could be used in "hidden" and "disabled" (will not be saved in config) Just text: Instance is running, Instance is not running
-                "aliveHdr": {
-                    "type": "header",
-                    "text": "ALIVE",
-                    "size": 2
-                },
-                "aliveTxt": {
-                    "type":"staticText",
-                    "text": "ALIVE displays information about running or stopped instance",
-                    "newLine": true
-                },
-                "alive": {
-                    "type": "alive",
-                    "label": "Alive",
-                    "instance": 0,                                  //check if the instance is alive. If not defined, it will be used current instance. You can use ${data.number} pattern in the text.
-                    "textAlive": "Instance (%&s) is alive",         // default text is Instance %s is alive, where %s will be replaced by ADAPTER.0.
-                    "textNotAlive": "Instance (%s) is not alive",   // default text is Instance %s is not alive, where %s will be replaced by ADAPTER.0.
-                    "newLine": true
-                },
-
                 // divider - horizontal line
                 "dividerHdr": {
                     "type": "header",
@@ -50,14 +30,8 @@
                     "type":"staticText",
                     "text": "some text after",
                     "newLine": true
-                }
-            }
-        },
+                },
 
-        "tab_2":{
-            "type": "panel",
-            "label": "Static (output only) Elements",            
-            "items": {
                 // pattern - read only field with pattern like 'https://${data.ip}:${data.port}' (will not be saved in config) Text input with read only flag, that shows pattern.
                 "patternHdr": {
                     "type": "header",
@@ -72,11 +46,119 @@
                 "pattern" :{
                     "type": "pattern",
                     "copyToClipboard": true,
-                    "pattern": "This s static pattern field with text [${data.patternInput}] from above",
+                    "pattern": "This is a static pattern field with text [${data.patternInput}] from above",
                     "sm":6,
                     "md":6,
                     "lg":6,
                     "xs":6,
+                    "newLine": true
+                },
+
+                // staticImage - static image
+                "staticImageHdr": {
+                    "type": "header",
+                    "text": "STATIC IMAGE",
+                    "size": 2
+                },
+                "staticImageWarning": {
+                    "type":"staticText",
+                    "text": "WARNING: functionality of element STATIC IMAGE currently under investigation",
+                    "style": {
+                        "color": "red"
+                    }
+                },
+                "staticImage": {
+                    "type":"staticImage",
+                    "label":"some picture",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/admin/admin.png",
+                    "newLine": true
+                },
+                // TODO: src parameter ??
+
+                // staticLink - static link
+                "staticLinkHdr": {
+                    "type": "header",
+                    "text": "STATIC LINK",
+                    "size": 2
+                },
+                "staticLink1Txt": {
+                    "type":"staticText",
+                    "text": "A static link can be shown textually", // same as label
+                    "newLine": true
+                },
+                "staticLink1": {
+                    "type":"staticLink",
+                    "text": "link to jsonConfig schema.md",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "icon":"info",
+                    "newLine": true
+                },
+                "staticLink2Txt": {
+                    "type":"staticText",
+                    "text": "or as button. Several icons are available.", // same as label
+                    "newLine": true
+                },
+                "staticLink2a": {
+                    "type":"staticLink",
+                    //"label": "link",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "button":true,
+                    "icon":"auth",
+                    "newLine": true
+                },
+                "staticLink2b": {
+                    "type":"staticLink",
+                    //"label": "link",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "button":true,
+                    "icon":"send"
+                },
+                "staticLink2c": {
+                    "type":"staticLink",
+                    //"label": "link",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "button":true,
+                    "icon":"web"
+                },
+                "staticLink2d": {
+                    "type":"staticLink",
+                    //"label": "link",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "button":true,
+                    "icon":"warning"
+                },
+                "staticLink2e": {
+                    "type":"staticLink",
+                    //"label": "link",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "button":true,
+                    "icon":"error"
+                },
+                "staticLink2f": {
+                    "type":"staticLink",
+                    //"label": "link",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "button":true,
+                    "icon":"info"
+                },
+                "staticLink2g": {
+                    "type":"staticLink",
+                    //"label": "link",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "button":true,
+                    "icon":"search"
+                },
+                "staticLink2h": {
+                    "type":"staticLink",
+                    "text": "optional text possible",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "button":true,
+                    "icon":"info",
+                    "newLine": true
+                },                
+                "staticLink3": {
+                    "type":"staticText",
+                    "text": "Note that the link url max contain variables.", // same as label
                     "newLine": true
                 },
 
@@ -86,18 +168,125 @@
                     "text": "STATIC TEXT",
                     "size": 2
                 },
-                "staticText": {
+                "staticText1": {
                     "type":"staticText",
                     "text": "This is a static Text", // same as label
                     "newLine": true
+                },
+                "staticText2": {
+                    "type":"staticText",
+                    "text": "Static text kan have serveral sizes",
+                    "newLine": true
+                },
+                "staticText2a": {
+                    "type":"staticText",
+                    "text": "font 16",
+                    "style": {
+                        "fontSize": 16
+                    }
+                },
+                "staticText2b": {
+                    "type":"staticText",
+                    "text": "font 24",
+                    "style": {
+                        "fontSize": 24
+                    }
+                },
+                "staticText3": {
+                    "type":"staticText",
+                    "text": "and colours",
+                    "newLine": true
+                },
+                "staticText3a": {
+                    "type":"staticText",
+                    "text": "red",
+                    "style": {
+                        "color": "red"
+                    }
+                },
+                "staticText3b": {
+                    "type":"staticText",
+                    "text": "green",
+                    "style": {
+                        "color": "green"
+                    }
                 }
+            }
+        },
+
+        "tab_2":{
+            "type": "panel",
+            "label": "Infos",
+            "items": {
+                // alive - just indication if the instance is alive, and it could be used in "hidden" and "disabled" (will not be saved in config) Just text: Instance is running, Instance is not running
+                "aliveHdr": {
+                    "type": "header",
+                    "text": "ALIVE",
+                    "size": 2
+                },
+                "aliveTxt": {
+                    "type":"staticText",
+                    "text": "ALIVE displays information about running or stopped instance",
+                    "newLine": true
+                },
+                "alive": {
+                    "type": "alive",
+                    "label": "Alive",
+                    "instance": 0,                                  //check if the instance is alive. If not defined, it will be used current instance. You can use ${data.number} pattern in the text.
+                    "textAlive": "Instance (%&s) is alive",         // default text is Instance %s is alive, where %s will be replaced by ADAPTER.0.
+                    "textNotAlive": "Instance (%s) is not alive",   // default text is Instance %s is not alive, where %s will be replaced by ADAPTER.0.
+                    "newLine": true
+                },
+
+                // uuid - Show iobroker UUID
+                "uuidTextHdr": {
+                    "type": "header",
+                    "text": "UUID",
+                    "size": 2
+                },
+                "uuidText1": {
+                    "type":"staticText",
+                    "text": "show iobroker uuid", 
+                    "newLine": true
+                },
+                "uuid": {
+                    "type":"uuid",
+                    "label": "This is the iobroker uuid", 
+                    "sm":3,
+                    "md":3,
+                    "lg":3,
+                    "xs":3,
+                    "newLine": true
+                }
+
             }
         },
 
         "tab_3":{
             "type": "panel",
-            "label": "Selection Elements",
+            "label": "Pickers",
             "items": {
+                // color - color picker
+                "colorHdr": {
+                    "type": "header",
+                    "text": "COLOR",
+                    "size": 2
+                },
+                "colorTxt": {
+                    "type":"staticText",
+                    "text": "COLOR is used to select a color",
+                    "newLine": true
+                },
+                "color": {
+                    "type":"color",
+                    "label":"select a color",
+                    "newLine": true
+                },
+                "colorVal": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.color}"
+                },
+
                 // coordinates
                 "coordinatesHdr": {
                     "type": "header",
@@ -159,6 +348,37 @@
 //                    "pattern":"stored values are ${data.lat} and ${data.long}"
 //                },
                 
+                // func - select a configured functionality 
+                "funcHdr": {
+                    "type": "header",
+                    "text": "FUNC",
+                    "size": 2
+                },
+                "funcWarning": {
+                    "type":"staticText",
+                    "text": "WARNING: fucntionality of element COORDINATES currently under investigation",
+                    "style": {
+                        "color": "red"
+                    }
+                },
+                "funcTxt": {
+                    "type":"staticText",
+                    "text": "FUNC is used to select a functionality from enum.func. Note that enum.func should contain some data for demo.",
+                    "newLine": true
+                },
+                "func": {
+                    "type":"func",
+                    "label":"select a function",
+                    "sm":3,
+                    "md":3,
+                    "lg":3,
+                    "xs":3,
+                    "newLine": true
+                },
+                "funcVal": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.func}"
+                },
 
                 // instance
                 "instanceHdr": {
@@ -211,6 +431,172 @@
                 "instance3val": {
                     "type":"pattern",
                     "pattern":"stored value is ${data.instance3}"
+                },
+
+                // ip drop down selection preloaded with available ip addresses
+                "ipHdr": {
+                    "type": "header",
+                    "text": "IP",
+                    "size": 2
+                },
+                "ipTxt": {
+                    "type":"staticText",
+                    "text": "ip drop down selection preloaded with available ip addresses of host",
+                    "newLine": true
+                },
+                "ip": {
+                    "type": "ip",
+                    "label": "IP-Address",
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4,
+                    "newLine": true
+                },
+                "ipVal": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.ip}",
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4
+                },
+
+                // language - select language
+                "languageHdr": {
+                    "type": "header",
+                    "text": "LANGUAGE",
+                    "size": 2
+                },
+                "languageTxt": {
+                    "type":"staticText",
+                    "text": "drop down to select language",
+                    "newLine": true
+                },
+                "language": {
+                    "type": "language",
+                    "label": "Select a language",
+                    "system":true,
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4,
+                    "newLine": true
+                },
+                "languageVal": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.language}"
+                },
+
+                // objectId - object ID - show it with name, color and icon
+                "objectIdHdr": {
+                    "type": "header",
+                    "text": "OBJECT ID",
+                    "size": 2
+                },
+                "objectId1Txt": {
+                    "type":"staticText",
+                    "text": "select object ID - show it with name, color and icon (states only)",
+                    "newLine": true
+                },
+                "objectId1": {
+                    "type":"objectId",
+                    "label":"select an objectId",
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4,
+                    "newLine": true
+                },
+                "objectId1Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.objectId1}",
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4
+                },
+                "objectId2Txt": {
+                    "type":"staticText",
+                    "text": "select object ID - show it with name, color and icon, select devices and channels",
+                    "newLine": true
+                },
+                // TODO filtering does not seem to work
+                "objectId2": {
+                    "type":"objectId",
+                    "label":"select an objectId",
+                    "types":['channel', 'device'],
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4,
+                    "newLine": true
+                },
+                "objectId2Val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.objectId2}",
+                    "sm":4,
+                    "md":4,
+                    "lg":4,
+                    "xs":4
+                },
+
+
+                // room - select from enum.room 
+                "roomHdr": {
+                    "type": "header",
+                    "text": "ROOM",
+                    "size": 2
+                },
+                "roomWarning": {
+                    "type":"staticText",
+                    "text": "WARNING: functionality of element ROOM currently under investigation",
+                    "style": {
+                        "color": "red"
+                    }
+                },
+                "roomTxt": {
+                    "type":"staticText",
+                    "text": "ROOM is used to select a room from enum.room. Note that enum.room should contain some data for demo.",
+                    "newLine": true
+                },
+                "room": {
+                    "type":"room",
+                    "label":"select a room",
+                    "sm":3,
+                    "md":3,
+                    "lg":3,
+                    "xs":3,
+                    "newLine": true
+                },
+                "roomVal": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.room}"
+                },
+
+                // user - select a user 
+                "userHdr": {
+                    "type": "header",
+                    "text": "USER",
+                    "size": 2
+                },
+                "userTxt": {
+                    "type":"staticText",
+                    "text": "USER is used to select a user.",
+                    "newLine": true
+                },
+                "user": {
+                    "type":"user",
+                    "label":"select a user",
+                    "sm":3,
+                    "md":3,
+                    "lg":3,
+                    "xs":3,
+                    "newLine": true
+                },
+                "userVal": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.user}"
                 },
 
                 // timepicker
@@ -273,11 +659,169 @@
                     "md":4,
                     "lg":4,
                     "xs":4
-                },
+                }
             }
         },
 
         "tab_4":{
+            "type": "panel",
+            "label": "INPUT",            
+            "items": {
+                // standard checkbox
+                "checkboxHdr": {
+                    "type": "header",
+                    "text": "CHECKBOX",
+                    "size": 2
+                },
+                "checkbox1Txt": {
+                    "type":"staticText",
+                    "text": "Standard checkbox",
+                    "newLine": true
+                },
+                "checkbox1": {
+                    "type": "checkbox",
+                    "label": "Simple Checkbox",
+                    "tooltip":"click to enable or disable checkbox, check tooltiüp by hovering over checkbox",
+                    "help":"Helptext possible",
+                    "default":false,
+                    "newLine": true
+                },
+                "checkbox1val": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.checkbox1}"
+                },
+                "checkbox2Txt": {
+                    "type":"staticText",
+                    "text": "Checkboxes can be enabled and/or hidden",
+                    "newLine": true
+                },
+                "checkbox2a": {
+                    "type": "checkbox",
+                    "label": "Checkbox #1",
+                    "tooltip":"enables second checkbox",
+                    "newLine": true
+                },
+                "checkbox2b": {
+                    "type": "checkbox",
+                    "label": "Checkbox #2",
+                    "tooltip":"enabled by first checkbox, hides third checkbox",
+                    "disabled":"!data.checkbox2a"
+                },
+                "checkbox2c": {
+                    "type": "checkbox",
+                    "label": "Checkbox #3",
+                    "tooltip":"causes error if not checked",
+                    "hidden":"!data.checkbox2b",
+                    "validator": "!!data.checkbox2c",
+                    "validatorErrorText": "check checkbox 3 to clear error"
+                },
+
+                // chips - user can enter the word, and it will be added (see cloud => services => White list). Option is an array if no `delimiter` defined.
+                "chipsHdr": {
+                    "type": "header",
+                    "text": "CHIPS",
+                    "size": 2
+                },
+                "chipsTxt": {
+                    "type":"staticText",
+                    "text": "user can enter the word, and it will be added. Output is an array if no `delimiter` defined",
+                    "newLine": true
+                },
+                "chips": {
+                    "type": "chips",
+                    "label": "Text to add",
+                    "delimiter":";",
+                    "newLine": true
+                },
+                "chipsVal": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.chips}",
+                    "sm":5,
+                    "md":5,
+                    "lg":5,
+                    "xs":5
+                },
+
+                // cron
+                "cronHdr": {
+                    "type": "header",
+                    "text": "CRON",
+                    "size": 2
+                },
+                "cronTxt": {
+                    "type":"staticText",
+                    "text": "configure cron data",
+                    "newLine": true
+                },
+                "cron": {
+                    "type": "cron",
+                    "label": "cron data",
+                    "delimiter":";",
+                    "newLine": true
+                },
+                "cronVal": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.cron}",
+                    "sm":8,
+                    "md":8,
+                    "lg":8,
+                    "xs":8
+                },
+
+                // json - json editor
+                "jsonHdr": {
+                    "type": "header",
+                    "text": "JSON",
+                    "size": 2
+                },
+                "jsonTxt": {
+                    "type":"staticText",
+                    "text": "configure json data",
+                    "newLine": true
+                },
+                "json": {
+                    "type": "json",
+                    "label": "json data",
+                    "delimiter":";",
+                    "newLine": true
+                },
+                "jsonVal": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.json}",
+                    "sm":8,
+                    "md":8,
+                    "lg":8,
+                    "xs":8
+                },
+
+                // port - Special input for ports. It checks automatically if port is used by other instances and shows warning
+                "portHdr": {
+                    "type": "header",
+                    "text": "PORT",
+                    "size": 2
+                },
+                "portTxt": {
+                    "type":"staticText",
+                    "text": "PORT is used to specify a port. It checks automatically if port is used by other instances and shows warning.",
+                    "newLine": true
+                },
+                "port": {
+                    "type":"port",
+                    "label":"select a port",
+                    "sm":3,
+                    "md":3,
+                    "lg":3,
+                    "xs":3,
+                    "newLine": true
+                },
+                "portVal": {
+                    "type":"pattern",
+                    "pattern":"stored value is ${data.port}"
+                }
+            }
+        },
+
+        "tab_5":{
             "type": "panel",
             "label": "TAB-2",            
             "items": {
@@ -287,11 +831,7 @@
                     "label": "option1",
                     "newLine": true
                 },
-                // drop down selection preloaded with available ip addresses
-                "ipAddress": {
-                    "type": "ip",
-                    "label": "IP-Address"
-                },
+
                 "testTest": {
                     "type": "textSendTo",
                     "label": "lblStationId",
@@ -301,6 +841,7 @@
                 }
             }
         },
+
         "tab_99":{
             "type": "panel",
             "label": "INDEX",            
@@ -317,7 +858,7 @@
                 },
                 "idx_a01x": {
                     "type":"staticText",
-                    "text": "see tab Static Infos",
+                    "text": "see tab INFOS",
                     "style": {
                         "color": "green"
                     }
@@ -389,6 +930,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_c04x": {
+                    "type":"staticText",
+                    "text": "see tab INPUT",
+                    "style": {
+                        "color": "green"
+                    }
+                },
 
                 // checkLicense - Very special component to check the license online. It's required exactly `license` and `useLicenseManager` properties in native.
                 "idx_c05": {
@@ -411,6 +959,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_c06x": {
+                    "type":"staticText",
+                    "text": "see tab PICKERS",
+                    "style": {
+                        "color": "green"
+                    }
+                },
 
                 // color - color picker
                 "idx_c07": {
@@ -421,6 +976,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_c07x": {
+                    "type":"staticText",
+                    "text": "see tab PICKERS",
+                    "style": {
+                        "color": "green"
+                    }
                 },
 
                 // coordinates
@@ -433,6 +995,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_c08x": {
+                    "type":"staticText",
+                    "text": "see tab PICKERS",
+                    "style": {
+                        "color": "red"
+                    }
+                },
 
                 // cron
                 "idx_c09": {
@@ -444,6 +1013,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_c09x": {
+                    "type":"staticText",
+                    "text": "see tab PICKERS",
+                    "style": {
+                        "color": "green"
+                    }
+                },
 
                 // custom (only Admin6)
                 "idx_c10": {
@@ -454,6 +1030,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_c10x": {
+                    "type":"staticText",
+                    "text": "currently no working example available",
+                    "style": {
+                        "color": "red"
+                    }
                 },
 
                 // divider - horizontal line
@@ -468,7 +1051,7 @@
                 },
                 "idx_d01x": {
                     "type":"staticText",
-                    "text": "see tab Static Infos",
+                    "text": "see tab STATIC",
                     "style": {
                         "color": "green"
                     }
@@ -505,6 +1088,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_f03x": {
+                    "type":"staticText",
+                    "text": "see tab PICKERS",
+                    "style": {
+                        "color": "red"
+                    }
                 },
 
                 // header
@@ -565,6 +1155,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_i03x": {
+                    "type":"staticText",
+                    "text": "see tab PICKERS",
+                    "style": {
+                        "color": "green"
+                    }
+                },
 
                 // ip - bind address
                 "idx_i04": {
@@ -575,6 +1172,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_i04x": {
+                    "type":"staticText",
+                    "text": "see tab PICKERS",
+                    "style": {
+                        "color": "green"
+                    }
                 },
 
                 // json - json editor
@@ -598,6 +1202,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_l01x": {
+                    "type":"staticText",
+                    "text": "see tab PICKERS",
+                    "style": {
+                        "color": "green"
+                    }
+                },
 
                 // number
                 "idx_n01": {
@@ -619,6 +1230,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_o01x": {
+                    "type":"staticText",
+                    "text": "see tab PICKERS",
+                    "style": {
+                        "color": "green"
+                    }
                 },
 
                 // panel - Tab with items
@@ -653,6 +1271,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_p03x": {
+                    "type":"staticText",
+                    "text": "see tab STATIC",
+                    "style": {
+                        "color": "green"
+                    }
+                },
 
                 // port - Special input for ports. It checks automatically if port is used by other instances and shows warning
                 "idx_p04": {
@@ -674,6 +1299,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_r01x": {
+                    "type":"staticText",
+                    "text": "see tab PICKERS",
+                    "style": {
+                        "color": "red"
+                    }
                 },
 
                 // select 
@@ -741,6 +1373,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_s06x": {
+                    "type":"staticText",
+                    "text": "see tab STATIC",
+                    "style": {
+                        "color": "red"
+                    }
+                },
 
                 // staticLink - static link
                 "idx_s07": {
@@ -751,6 +1390,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_s07x": {
+                    "type":"staticText",
+                    "text": "see tab STATIC",
+                    "style": {
+                        "color": "green"
+                    }
                 },
 
                 // staticText - static text like description
@@ -763,6 +1409,14 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_s08x": {
+                    "type":"staticText",
+                    "text": "see tab STATIC",
+                    "style": {
+                        "color": "green"
+                    }
+                },
+
 
                 // table - table with items that could be deleted, added, movedUP, moved Down
                 "idx_t01": {
@@ -818,6 +1472,13 @@
                     "xs":2,
                     "newLine": true
                 },
+                "idx_u01x": {
+                    "type":"staticText",
+                    "text": "see tab PICKERS",
+                    "style": {
+                        "color": "green"
+                    }
+                },
 
                 // uuid - Show iobroker UUID
                 "idx_u02": {
@@ -828,6 +1489,13 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
+                },
+                "idx_u02x": {
+                    "type":"staticText",
+                    "text": "see tab INFOS",
+                    "style": {
+                        "color": "green"
+                    }
                 }
             }
         }
