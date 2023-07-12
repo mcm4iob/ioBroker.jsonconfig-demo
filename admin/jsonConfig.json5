@@ -4,7 +4,7 @@
     "items": {
         "tab_1":{
             "type": "panel",
-            "label": "Static",            
+            "label": "Static",
             "items": {
                 // divider - horizontal line
                 "dividerHdr": {
@@ -155,7 +155,7 @@
                     "button":true,
                     "icon":"info",
                     "newLine": true
-                },                
+                },
                 "staticLink3": {
                     "type":"staticText",
                     "text": "Note that the link url max contain variables.", // same as label
@@ -246,12 +246,12 @@
                 },
                 "uuidText1": {
                     "type":"staticText",
-                    "text": "show iobroker uuid", 
+                    "text": "show iobroker uuid",
                     "newLine": true
                 },
                 "uuid": {
                     "type":"uuid",
-                    "label": "This is the iobroker uuid", 
+                    "label": "This is the iobroker uuid",
                     "sm":3,
                     "md":3,
                     "lg":3,
@@ -330,25 +330,25 @@
                     "type":"pattern",
                     "pattern":"stored value is ${data.coordinates2}"
                 },
-//                "coordinates3Txt": {
-//                    "type":"staticText",
-//                    "text": "COORDINATES displays coordinates (with names and useSystemSettings)",
-//                    "newLine": true
-//                },
-//                "coordinates3": {
-//                    "type":"coordinates",
-//                    "autoInit":true,
-//                    "longitudeName":"longitude",
-//                    "latitudeName":"latitude",
-//                    "useSystemName":true,
-//                    "newLine": true
-//                },
-//                "coordinates3val": {
-//                    "type":"pattern",
-//                    "pattern":"stored values are ${data.lat} and ${data.long}"
-//                },
-                
-                // func - select a configured functionality 
+                "coordinates3Txt": {
+                    "type":"staticText",
+                    "text": "COORDINATES displays coordinates (with names and useSystemSettings)",
+                    "newLine": true
+                },
+                "coordinates3": {
+                    "type":"coordinates",
+                    "autoInit":true,
+                    "longitudeName":"longitude",
+                    "latitudeName":"latitude",
+                    "useSystemName":true,
+                    "newLine": true
+                },
+                "coordinates3val": {
+                    "type":"pattern",
+                    "pattern":"stored values are ${data.lat} and ${data.long}"
+                },
+
+                // func - select a configured functionality
                 "funcHdr": {
                     "type": "header",
                     "text": "FUNC",
@@ -542,7 +542,7 @@
                 },
 
 
-                // room - select from enum.room 
+                // room - select from enum.room
                 "roomHdr": {
                     "type": "header",
                     "text": "ROOM",
@@ -574,7 +574,7 @@
                     "pattern":"stored value is ${data.room}"
                 },
 
-                // user - select a user 
+                // user - select a user
                 "userHdr": {
                     "type": "header",
                     "text": "USER",
@@ -665,7 +665,7 @@
 
         "tab_4":{
             "type": "panel",
-            "label": "INPUT",            
+            "label": "INPUT",
             "items": {
                 // autocomplete
                 "autocompleteHdr": {
@@ -834,8 +834,8 @@
                     "newLine": true
                 },
                 "json": {
-                    "type": "json",
-                    "label": "json data",
+                    "type": "jsonEditor",
+                    "label": "json editor",
                     "delimiter":";",
                     "newLine": true
                 },
@@ -901,7 +901,7 @@
                     "pattern":"stored value is ${data.number3}"
                 },
 
-                // password (repeat - if repeat password must be shown with the same width settings)  
+                // password (repeat - if repeat password must be shown with the same width settings)
                 "passwordHdr": {
                     "type": "header",
                     "text": "PASSWORD",
@@ -1035,7 +1035,7 @@
                     "val":"data.setState2t"
                 },
 
-                // slider - show slider (only Admin6)              
+                // slider - show slider (only Admin6)
                 "sliderHdr": {
                     "type": "header",
                     "text": "SLIDER",
@@ -1169,7 +1169,7 @@
 
         "tab_5":{
             "type": "panel",
-            "label": "SEND TO",            
+            "label": "SEND TO",
             "items": {
                 "introSendToTxt": {
                     "type":"staticText",
@@ -1181,7 +1181,7 @@
                     "text": "WARNING: all sendTo elements requires a running adapter instance",
                     "hidden": "_alive",
                     "newLine": true
-                },                                
+                },
 
                 "sendToHdr": {
                     "type": "header",
@@ -1231,7 +1231,7 @@
                 "sendTo2a": {
                     "type": "select",
                     "label": "Please select",
-                    "options":[ 
+                    "options":[
                         {"label":"OK", "value":1},
                         {"label":"FAIL", "value":0}
                     ],
@@ -1276,7 +1276,7 @@
 
         "tab_6":{
             "type": "panel",
-            "label": "TABLES",            
+            "label": "TABLES",
             "items": {
                 "tableHdr": {
                     "type": "header",
@@ -1309,7 +1309,7 @@
                         "color": "red"
                     }
                 },
-    
+
                 "table1": {
                     "type": "table",
                     "newLine": true,
@@ -1438,7 +1438,7 @@
 
         "tab_99":{
             "type": "panel",
-            "label": "INDEX",            
+            "label": "INDEX",
             "items": {
                 // alive - just indication if the instance is alive, and it could be used in "hidden" and "disabled" (will not be saved in config)
                 "idx_a01": {
@@ -1677,7 +1677,7 @@
                     "lg":2,
                     "xs":2,
                     "newLine": true
-                }, 
+                },
 
                 // func - Select function from `enum.func` (With color and icon) - (only Admin6)
                 "idx_f03": {
@@ -1871,10 +1871,10 @@
                     }
                 },
 
-                // password (repeat - if repeat password must be shown with the same width settings)  
+                // password (repeat - if repeat password must be shown with the same width settings)
                 "idx_p02": {
                     "type":"staticText",
-                    "text":"password",  
+                    "text":"password",
                     "sm":2,
                     "md":2,
                     "lg":2,
@@ -1937,10 +1937,10 @@
                     }
                 },
 
-                // select 
+                // select
                 "idx_s01": {
                     "type":"staticText",
-                    "text":"select", 
+                    "text":"select",
                     "sm":2,
                     "md":2,
                     "lg":2,
@@ -1995,10 +1995,10 @@
                     }
                 },
 
-                // slider - show slider (only Admin6)              
+                // slider - show slider (only Admin6)
                 "idx_s05": {
                     "type":"staticText",
-                    "text":"slider",              
+                    "text":"slider",
                     "sm":2,
                     "md":2,
                     "lg":2,
