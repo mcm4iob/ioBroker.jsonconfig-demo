@@ -340,12 +340,12 @@
                     "autoInit":true,
                     "longitudeName":"longitude",
                     "latitudeName":"latitude",
-                    "useSystemName":true,
+                    "useSystemName":"useSystem",
                     "newLine": true
                 },
                 "coordinates3val": {
                     "type":"pattern",
-                    "pattern":"stored values are ${data.lat} and ${data.long}"
+                    "pattern":"stored values are ${data.longitude} and ${data.latitude}"
                 },
 
                 // func - select a configured functionality
