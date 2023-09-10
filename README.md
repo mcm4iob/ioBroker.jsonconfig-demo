@@ -14,7 +14,7 @@
 
 This adapter is a demo for json based config only.
 
-**This is no real adapter. The sole purpose of this repository is to isllustrate and test the varios functionality of jsonConfig elements to adapter developers.**
+**This is no real adapter. The sole purpose of this repository is to illustrate and test the various functionality of jsonConfig elements to adapter developers.**
 
 Development is still IN PROGRESS
 

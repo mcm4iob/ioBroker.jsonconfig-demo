@@ -1,5 +1,3 @@
-'use strict';
-
 /*
  * Created with @iobroker/create-adapter v2.3.0
  */
@@ -7,19 +5,19 @@
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
 const utils = require('@iobroker/adapter-core');
+const adapterName = require('./package.json').name.split('.').pop();
 
 // Load your modules here, e.g.:
 // const fs = require("fs");
 
 class JsonconfigDemo extends utils.Adapter {
-
     /**
      * @param {Partial<utils.AdapterOptions>} [options={}]
      */
     constructor(options) {
         super({
             ...options,
-            name: 'jsonconfig-demo',
+            name: adapterName,
         });
         this.on('ready', this.onReady.bind(this));
         this.on('stateChange', this.onStateChange.bind(this));
@@ -41,12 +39,12 @@ class JsonconfigDemo extends utils.Adapter {
 
         // The adapters config (in the instance object everything under the attribute "native") is accessible via
         // this.config:
-        this.log.info('config option1: ' + this.config.option1);
-        this.log.info('config option2: ' + this.config.option2);
+        this.log.info(`config option1: ${this.config.option1}`);
+        this.log.info(`config option2: ${this.config.option2}`);
 
         /*onMess
 
-        For every state in the system there has to be also an object of type state
+        For every state in the system, there has to be also an object of type state
         Here a simple template for a boolean variable named "testVariable"
         Because every adapter instance uses its own unique namespace variable names can't collide with other adapters variables
         */
@@ -85,10 +83,10 @@ class JsonconfigDemo extends utils.Adapter {
 
         // examples for the checkPassword/checkGroup functions
         let result = await this.checkPasswordAsync('admin', 'iobroker');
-        this.log.info('check user admin pw iobroker: ' + result);
+        this.log.info(`check user admin pw iobroker: ${result}`);
 
         result = await this.checkGroupAsync('admin', 'admin');
-        this.log.info('check group user admin group admin: ' + result);
+        this.log.info(`check group user admin group admin: ${result}`);
     }
 
     /**
@@ -142,7 +140,7 @@ class JsonconfigDemo extends utils.Adapter {
     }
 
     /**
-     * Some message was sent to this instance over message box. Used by email, pushover, text2speech, ...
+     * Some message was sent to this instance over the message box. Used by email, pushover, text2speech, ...
      * Using this method requires "common.messagebox" property to be set to true in io-package.json
      * @param {ioBroker.Message} obj
      */
@@ -170,11 +168,11 @@ class JsonconfigDemo extends utils.Adapter {
                 if (obj.callback) {
                     if (obj.message.data == 0)
                         this.sendTo(obj.from, obj.command,
-                            {error: "FAIL - This text describes some error"},
+                            {error: 'FAIL - This text describes some error'},
                             obj.callback);
                     else
                         this.sendTo(obj.from, obj.command,
-                            {result: "OK - This is some text describing the result"},
+                            {result: 'OK - This is some text describing the result'},
                             obj.callback);
                 }
             }
