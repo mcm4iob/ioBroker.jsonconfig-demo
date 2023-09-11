@@ -65,7 +65,7 @@
     "platform": "Javascript/Node.js",
     "main": "main.js",
     "icon": "jsonconfig-demo.png",
-    "enabled": true,
+    "enabled": false,
     "messagebox": true,
     "extIcon": "https://raw.githubusercontent.com/mcm1957/ioBroker.jsonconfig-demo/master/admin/jsonconfig-demo.png",
     "readme": "https://github.com/mcm1957/ioBroker.jsonconfig-demo/blob/master/README.md",

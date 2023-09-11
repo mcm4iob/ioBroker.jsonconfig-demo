@@ -6,8 +6,16 @@
             "type": "panel",
             "label": "Static",
             "items": {
+                "lintToJson": {
+                    "type":"staticLink",
+                    "text": "link to file that describes this configuration",
+                    "href": "https://github.com/mcm1957/ioBroker.jsonconfig-demo/blob/main/admin/jsonConfig.json5",
+                    "icon": "info",
+                    sm: 12
+                },
                 // divider - horizontal line
                 "dividerHdr": {
+                    "newLine": true,
                     "type": "header",
                     "text": "DIVIDER",
                     "size": 2
