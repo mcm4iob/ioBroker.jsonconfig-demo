@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "jsonconfig-demo",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "news": {
+      "0.0.3": {
+        "en": "initial release",
+        "de": "erstausstrahlung",
+        "ru": "начальный выпуск",
+        "pt": "lançamento inicial",
+        "nl": "niet",
+        "fr": "initial release",
+        "it": "rilascio iniziale",
+        "es": "liberación inicial",
+        "pl": "pierwsze wydanie",
+        "uk": "початковий реліз",
+        "zh-cn": "初步释放"
+      },
       "0.0.2": {
         "en": "initial release",
         "de": "erstausstrahlung",
