@@ -23,8 +23,7 @@ Development is still IN PROGRESS
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-
-### **WORK IN PROGRESS**
+### 0.0.2 (2023-09-10)
 * (mcm1957) initial release
 
 ## License
