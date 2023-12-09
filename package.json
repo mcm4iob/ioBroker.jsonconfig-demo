@@ -6,7 +6,7 @@
     "name": "mcm1957",
     "email": "mcm57@gmx.at"
   },
-  "homepage": "https://github.com/mcm1957/ioBroker.jsonconfig-demo",
+  "homepage": "https://github.com/mcm4iob/ioBroker.jsonconfig-demo",
   "license": "MIT",
   "keywords": [
     "jsonConfig demo",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mcm1957/ioBroker.jsonconfig-demo.git"
+    "url": "https://github.com/mcm4iob/ioBroker.jsonconfig-demo.git"
   },
   "engines": {
     "node": ">=16"
@@ -69,7 +69,7 @@
     "update-packages": "ncu --upgrade"
   },
   "bugs": {
-    "url": "https://github.com/mcm1957/ioBroker.jsonconfig-demo/issues"
+    "url": "https://github.com/mcm4iob/ioBroker.jsonconfig-demo/issues"
   },
   "readmeFilename": "README.md"
 }
