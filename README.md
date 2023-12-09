@@ -25,6 +25,7 @@ Development is still IN PROGRESS
 -->
 ### **WORK IN PROGRESS**
 * (mcm1957) Adapter has been moved to mcm4iob organisation
+* (mcm1957) Dependencies have been updated
 
 ### 0.0.4 (2023-09-11)
 * (mcm1957) initial release
