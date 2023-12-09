@@ -23,7 +23,7 @@ Development is still IN PROGRESS
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.0.5 (2023-12-09)
 * (mcm1957) Adapter has been moved to mcm4iob organisation
 * (mcm1957) Dependencies have been updated
 

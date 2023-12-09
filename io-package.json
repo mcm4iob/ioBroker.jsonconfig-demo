@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "jsonconfig-demo",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "news": {
+      "0.0.5": {
+        "en": "Adapter has been moved to mcm4iob organisation\nDependencies have been updated",
+        "de": "Adapter wurde auf mcm4iob Organisation verschoben\nAbhängigkeiten wurden aktualisiert",
+        "ru": "Адаптер переехал в организацию mcm4iob\nВ зависимости были обновлены",
+        "pt": "Adapter foi movido para a organização mcm4iob\nAs dependências foram atualizadas",
+        "nl": "Adapter is verplaatst naar McM4iob organisatie\nAfhankelijkheid",
+        "fr": "Adaptateur a été déplacé à mcm4iob organisation\nLes dépendances ont été mises à jour",
+        "it": "L'adattatore è stato spostato nell'organizzazione mcm4iob\nLe dipendenze sono state aggiornate",
+        "es": "Adaptador ha sido trasladado a la organización mcm4iob\nSe han actualizado las dependencias",
+        "pl": "Adapter został przeniesiony do organizacji mcm4iob\nZależności zostały zaktualizowane",
+        "uk": "Переміщено адаптер для організації mcm4iob\nОновлено залежність",
+        "zh-cn": "现已移到迈克姆4iob组织。\n已更新了属地"
+      },
       "0.0.4": {
         "en": "initial release",
         "de": "erstausstrahlung",

@@ -1,6 +1,6 @@
 {
   "name": "iobroker.jsonconfig-demo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "This adapter is a demo for json based config only.",
   "author": {
     "name": "mcm1957",
