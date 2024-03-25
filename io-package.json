@@ -126,6 +126,10 @@
       {
         "admin": ">=6.4.4"
       }
+    ],
+    "restartAdapters": [
+      "vis",
+      "jsonconfig-demo"
     ]
   },
   "native": {
