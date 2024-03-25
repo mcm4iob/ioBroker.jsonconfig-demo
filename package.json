@@ -17,7 +17,7 @@
     "url": "https://github.com/mcm4iob/ioBroker.jsonconfig-demo.git"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.0.4"
