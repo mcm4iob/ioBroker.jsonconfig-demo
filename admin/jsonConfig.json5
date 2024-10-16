@@ -1,6 +1,9 @@
 {   // lets start
     "i18n": true,
     "type": "tabs",
+    "tabsStyle": {
+        width: "calc(100% - 100px)"
+    },
     "items": {
         "tab_1":{
             "type": "panel",
@@ -11,7 +14,11 @@
                     "text": "link to file that describes this configuration",
                     "href": "https://github.com/mcm1957/ioBroker.jsonconfig-demo/blob/main/admin/jsonConfig.json5",
                     "icon": "info",
-                    sm: 12
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 // divider - horizontal line
                 "dividerHdr": {
@@ -23,21 +30,41 @@
                 "deviderTxt": {
                     "type": "staticText",
                     "text": "DIVIDER displays a divider line",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "deviderTxt1": {
                     "type": "staticText",
                     "text": "some text before",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "divider": {
                     "type": "divider",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "deviderTxt2": {
                     "type": "staticText",
                     "text": "some text after",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // pattern - read only field with pattern like 'https://${data.ip}:${data.port}' (will not be saved in config) Text input with read only flag, that shows pattern.
@@ -49,16 +76,22 @@
                 "patternInput":{
                     "type": "text",
                     "label": "Text",
-                    "help": "Enter text to be included into pattern output"
+                    "help": "Enter text to be included into pattern output",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "pattern" :{
                     "type": "pattern",
                     "copyToClipboard": true,
                     "pattern": "This is a static pattern field with text [${data.patternInput}] from above",
-                    "sm":6,
-                    "md":6,
-                    "lg":6,
-                    "xs":6,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
 
@@ -73,14 +106,24 @@
                     "text": "WARNING: functionality of element STATIC IMAGE currently under investigation",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "staticImage": {
                     "type": "staticImage",
                     "label": "some picture",
                     "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/admin/admin.png",
                     "newLine": true,
-                    "src": "../../adapter/jsonconfig-demo/jsonconfig-demo.png"
+                    "src": "../../adapter/jsonconfig-demo/jsonconfig-demo.png",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 // staticLink - static link
                 "staticLinkHdr": {
@@ -91,19 +134,34 @@
                 "staticLink1Txt": {
                     "type": "staticText",
                     "text": "A static link can be shown textually", // same as label
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "staticLink1": {
                     "type": "staticLink",
                     "text": "link to jsonConfig schema.md",
                     "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
                     "icon": "info",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "staticLink2Txt": {
                     "type": "staticText",
                     "text": "or as button. Several icons are available.", // same as label
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "staticLink2a": {
                     "type": "staticLink",
@@ -111,49 +169,84 @@
                     "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
                     "button": true,
                     "icon": "auth",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "staticLink2b": {
                     "type": "staticLink",
                     //"label": "link",
                     "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
                     "button": true,
-                    "icon": "send"
+                    "icon": "send",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "staticLink2c": {
                     "type": "staticLink",
                     //"label": "link",
                     "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
                     "button": true,
-                    "icon": "web"
+                    "icon": "web",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "staticLink2d": {
                     "type": "staticLink",
                     //"label": "link",
                     "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
                     "button": true,
-                    "icon": "warning"
+                    "icon": "warning",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "staticLink2e": {
                     "type": "staticLink",
                     //"label": "link",
                     "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
                     "button": true,
-                    "icon": "error"
+                    "icon": "error",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "staticLink2f": {
                     "type": "staticLink",
                     //"label": "link",
                     "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
                     "button": true,
-                    "icon": "info"
+                    "icon": "info",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "staticLink2g": {
                     "type": "staticLink",
                     //"label": "link",
                     "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
                     "button": true,
-                    "icon": "search"
+                    "icon": "search",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "staticLink2h": {
                     "type": "staticLink",
@@ -161,12 +254,22 @@
                     "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
                     "button": true,
                     "icon": "info",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "staticLink3": {
                     "type": "staticText",
                     "text": "Note that the link url can contain variables.", // same as label
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // staticText - static text like description
@@ -178,45 +281,80 @@
                 "staticText1": {
                     "type": "staticText",
                     "text": "This is a static Text", // same as label
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "staticText2": {
                     "type": "staticText",
                     "text": "Static text kan have several sizes",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "staticText2a": {
                     "type": "staticText",
                     "text": "font 16",
                     "style": {
                         "fontSize": 16
-                    }
+                    },
+                   "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "staticText2b": {
                     "type": "staticText",
                     "text": "font 24",
                     "style": {
                         "fontSize": 24
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "staticText3": {
                     "type": "staticText",
                     "text": "and colours",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "staticText3a": {
                     "type": "staticText",
                     "text": "red",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "staticText3b": {
                     "type": "staticText",
                     "text": "green",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 }
             }
         },
@@ -234,7 +372,12 @@
                 "aliveTxt": {
                     "type": "staticText",
                     "text": "ALIVE displays information about running or stopped instance",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "alive": {
                     "type": "alive",
@@ -242,7 +385,12 @@
                     "instance": 0,                                  //check if the instance is alive. If not defined, it will be used current instance. You can use ${data.number} pattern in the text.
                     "textAlive": "Instance (%&s) is alive",         // default text is Instance %s is alive, where %s will be replaced by ADAPTER.0.
                     "textNotAlive": "Instance (%s) is not alive",   // default text is Instance %s is not alive, where %s will be replaced by ADAPTER.0.
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // uuid - Show iobroker UUID
@@ -254,15 +402,21 @@
                 "uuidText1": {
                     "type": "staticText",
                     "text": "show iobroker uuid",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "uuid": {
                     "type": "uuid",
                     "label": "This is the iobroker UUID",
-                    "sm":3,
-                    "md":3,
-                    "lg":3,
-                    "xs":3,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 }
             }
@@ -281,16 +435,31 @@
                 "colorTxt": {
                     "type": "staticText",
                     "text": "COLOR is used to select a color",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "color": {
                     "type": "color",
                     "label": "select a color",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "colorVal": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.color}"
+                    "pattern": "stored value is ${data.color}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // coordinates
@@ -304,42 +473,82 @@
                     "text": "WARNING: element COORDINATES currently has some known issues, i.e delayed saving",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "coordinates1Txt": {
                     "type": "staticText",
                     "text": "COORDINATES displays coordinates (divider: #)",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "coordinates1": {
                     "type": "coordinates",
                     "divider": "#",
                     "useSystemName": false,
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "coordinates1val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.coordinates1}"
+                    "pattern": "stored value is ${data.coordinates1}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "coordinates2Txt": {
                     "type": "staticText",
                     "text": "COORDINATES displays coordinates (with autoInit)",
-                    "newLine": true
+                    "newLine": true,
+                   "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "coordinates2": {
                     "type": "coordinates",
                     "autoInit": true,
                     "useSystemName": false,
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "coordinates2val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.coordinates2}"
+                    "pattern": "stored value is ${data.coordinates2}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "coordinates3Txt": {
                     "type": "staticText",
                     "text": "COORDINATES displays coordinates (with names and useSystemSettings)",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "coordinates3": {
                     "type": "coordinates",
@@ -347,11 +556,21 @@
                     "longitudeName": "longitude",
                     "latitudeName": "latitude",
                     "useSystemName": "useSystem",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "coordinates3val": {
                     "type": "pattern",
-                    "pattern": "stored values are ${data.longitude} and ${data.latitude}"
+                    "pattern": "stored values are ${data.longitude} and ${data.latitude}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // func - select a configured functionality
@@ -365,25 +584,41 @@
                     "text": "WARNING: functionality of element COORDINATES currently under investigation",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "funcTxt": {
                     "type": "staticText",
                     "text": "FUNC is used to select a functionality from enum.func. Note that enum.func should contain some data for demo.",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "func": {
                     "type": "func",
                     "label": "select a function",
-                    "sm":3,
-                    "md":3,
-                    "lg":3,
-                    "xs":3,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "funcVal": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.func}"
+                    "pattern": "stored value is ${data.func}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // instance
@@ -395,48 +630,93 @@
                 "instance1Txt": {
                     "type": "staticText",
                     "text": "INSTANCE select an instance of adapter admin (option short)",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "instance1": {
                     "type": "instance",
                     "adapter": "admin",
                     "short": true,
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "instance1val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.instance1}"
+                    "pattern": "stored value is ${data.instance1}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "instance2Txt": {
                     "type": "staticText",
                     "text": "INSTANCE select an instance of adapter admin (option long)",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "instance2": {
                     "type": "instance",
                     "adapter": "admin",
                     "long": true,
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "instance2val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.instance2}"
+                    "pattern": "stored value is ${data.instance2}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "instance3Txt": {
                     "type": "staticText",
                     "text": "INSTANCE select an instance of adapter admin, all or none (options allowDeactivate and all)",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "instance3": {
-                        "type": "instance",
-                        "adapter": "admin",
-                        "allowDeactivate": true,
-                        "all": true,
-                        "newLine": true
+                    "type": "instance",
+                    "adapter": "admin",
+                    "allowDeactivate": true,
+                    "all": true,
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "instance3val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.instance3}"
+                    "pattern": "stored value is ${data.instance3}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // ip drop down selection preloaded with available ip addresses
@@ -448,7 +728,12 @@
                 "ipTxt": {
                     "type": "staticText",
                     "text": "ip drop down selection preloaded with available ip addresses of host",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "ip": {
                     "type": "ip",
@@ -457,15 +742,21 @@
                     "md":4,
                     "lg":4,
                     "xs":4,
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "ipVal": {
                     "type": "pattern",
                     "pattern": "stored value is ${data.ip}",
-                    "sm":4,
-                    "md":4,
-                    "lg":4,
-                    "xs":4
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // language - select language
@@ -477,21 +768,32 @@
                 "languageTxt": {
                     "type": "staticText",
                     "text": "drop down to select language",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "language": {
                     "type": "language",
                     "label": "Select a language",
                     "system": true,
-                    "sm":4,
-                    "md":4,
-                    "lg":4,
-                    "xs":4,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "languageVal": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.language}"
+                    "pattern": "stored value is ${data.language}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // objectId - object ID - show it with name, color and icon
@@ -503,48 +805,62 @@
                 "objectId1Txt": {
                     "type": "staticText",
                     "text": "select object ID - show it with name, color and icon (states only)",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "objectId1": {
                     "type": "objectId",
                     "label": "select an objectId",
-                    "sm":4,
-                    "md":4,
-                    "lg":4,
-                    "xs":4,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "objectId1Val": {
                     "type": "pattern",
                     "pattern": "stored value is ${data.objectId1}",
-                    "sm":4,
-                    "md":4,
-                    "lg":4,
-                    "xs":4
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "objectId2Txt": {
                     "type": "staticText",
                     "text": "select object ID - show it with name, color and icon, select devices and channels",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 // TODO filtering does not seem to work
                 "objectId2": {
                     "type": "objectId",
                     "label": "select an objectId",
                     "types":['channel', 'device'],
-                    "sm":4,
-                    "md":4,
-                    "lg":4,
-                    "xs":4,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "objectId2Val": {
                     "type": "pattern",
                     "pattern": "stored value is ${data.objectId2}",
-                    "sm":4,
-                    "md":4,
-                    "lg":4,
-                    "xs":4
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
 
@@ -559,20 +875,31 @@
                     "text": "WARNING: functionality of element ROOM currently under investigation",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "roomTxt": {
                     "type": "staticText",
                     "text": "ROOM is used to select a room from enum.room. Note that enum.room should contain some data for demo.",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "room": {
                     "type": "room",
                     "label": "select a room",
-                    "sm":3,
-                    "md":3,
-                    "lg":3,
-                    "xs":3,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "roomVal": {
@@ -589,20 +916,31 @@
                 "userTxt": {
                     "type": "staticText",
                     "text": "USER is used to select a user.",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "user": {
                     "type": "user",
                     "label": "select a user",
-                    "sm":3,
-                    "md":3,
-                    "lg":3,
-                    "xs":3,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "userVal": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.user}"
+                    "pattern": "stored value is ${data.user}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // timepicker
@@ -616,24 +954,40 @@
                     "text": "WARNING: element DATEPICKER currently has some known issues, i.e data is stored only after change of contents",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 //                "datePickerTxt": {
 //                    "type": "staticText",
 //                    "text": "INSTANCE select an instance of adapter admin (option short)",
-//                    "newLine": true
+//                    "newLine": true,
+//                    "xs": 12,
+//                    "sm": 12,
+//                    "md": 12,
+//                    "lg": 6,
+//                    "xl": 6
 //                },
                 "datePicker1": {
                     "type": "datePicker",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "datePicker1val": {
                     "type": "pattern",
                     "pattern": "stored value is ${data.datePicker1}",
-                    "sm":4,
-                    "md":4,
-                    "lg":4,
-                    "xs":4
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // timepicker
@@ -647,24 +1001,40 @@
                     "text": "WARNING: element TIMEPICKER currently has some known issues, i.e data is stored only after change of contents",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 //                "timepickerTxt": {
 //                    "type": "staticText",
 //                    "text": "INSTANCE select an instance of adapter admin (option short)",
-//                    "newLine": true
+//                    "newLine": true,
+//                    "xs": 12,
+//                    "sm": 12,
+//                    "md": 12,
+//                    "lg": 6,
+//                    "xl": 6
 //                },
                 "timePicker1": {
                     "type": "timePicker",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "timePicker1val": {
                     "type": "pattern",
                     "pattern": "stored value is ${data.timePicker1}",
-                    "sm":4,
-                    "md":4,
-                    "lg":4,
-                    "xs":4
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 }
             }
         },
@@ -682,42 +1052,64 @@
                 "autocomplete1Txt": {
                     "type": "staticText",
                     "text": "Standard autocomplete",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "autocomplete1": {
                     "type": "autocomplete",
                     "label": "Simple autocomplete",
                     "options":["value1", "value2", "value3"],
                     "freeSolo": false,
-                    "sm":4,
-                    "md":4,
-                    "lg":4,
-                    "xs":4,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "autocomplete1Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.autocomplete1}"
+                    "pattern": "stored value is ${data.autocomplete1}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "autocomplete2Txt": {
                     "type": "staticText",
                     "text": "autocomplete with free text",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "autocomplete2": {
                     "type": "autocomplete",
                     "label": "Simple autocomplete",
                     "options":[{"label": "Option 1", "value":1}, {"label": "No Option", "value":2}, "SomeText"],
                     "freeSolo": true,
-                    "sm":4,
-                    "md":4,
-                    "lg":4,
-                    "xs":4,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "autocomplete2Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.autocomplete2}"
+                    "pattern": "stored value is ${data.autocomplete2}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // standard checkbox
@@ -729,7 +1121,12 @@
                 "checkbox1Txt": {
                     "type": "staticText",
                     "text": "Standard checkbox",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "checkbox1": {
                     "type": "checkbox",
@@ -737,28 +1134,53 @@
                     "tooltip": "click to enable or disable checkbox, check tooltip by hovering over checkbox",
                     "help": "Help text possible",
                     "default": false,
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "checkbox1Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.checkbox1}"
+                    "pattern": "stored value is ${data.checkbox1}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "checkbox2Txt": {
                     "type": "staticText",
                     "text": "Checkboxes can be enabled and/or hidden",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "checkbox2a": {
                     "type": "checkbox",
                     "label": "Checkbox #1",
                     "tooltip": "enables second checkbox",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "checkbox2b": {
                     "type": "checkbox",
                     "label": "Checkbox #2",
                     "tooltip": "enabled by first checkbox, hides third checkbox",
-                    "disabled": "!data.checkbox2a"
+                    "disabled": "!data.checkbox2a",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "checkbox2c": {
                     "type": "checkbox",
@@ -766,7 +1188,12 @@
                     "tooltip": "causes error if not checked",
                     "hidden": "!data.checkbox2b",
                     "validator": "!!data.checkbox2c",
-                    "validatorErrorText": "check checkbox 3 to clear error"
+                    "validatorErrorText": "check checkbox 3 to clear error",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // chips - user can enter the word, and it will be added (see cloud => services => White list). Option is an array if no `delimiter` defined.
@@ -778,21 +1205,32 @@
                 "chipsTxt": {
                     "type": "staticText",
                     "text": "user can enter the word, and it will be added. Output is an array if no `delimiter` defined",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "chips": {
                     "type": "chips",
                     "label": "Text to add",
                     "delimiter": ";",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "chipsVal": {
                     "type": "pattern",
                     "pattern": "stored value is ${data.chips}",
-                    "sm":5,
-                    "md":5,
-                    "lg":5,
-                    "xs":5
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // cron
@@ -804,21 +1242,32 @@
                 "cronTxt": {
                     "type": "staticText",
                     "text": "configure cron data",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "cron": {
                     "type": "cron",
                     "label": "cron data",
                     "delimiter": ";",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "cronVal": {
                     "type": "pattern",
                     "pattern": "stored value is ${data.cron}",
-                    "sm":8,
-                    "md":8,
-                    "lg":8,
-                    "xs":8
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // json - json editor
@@ -832,26 +1281,42 @@
                     "text": "WARNING: functionality of element JSON currently under investigation",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "jsonTxt": {
                     "type": "staticText",
                     "text": "configure json data",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "json": {
                     "type": "jsonEditor",
                     "label": "json editor",
                     "delimiter": ";",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "jsonVal": {
                     "type": "pattern",
                     "pattern": "stored value is ${data.json}",
-                    "sm":8,
-                    "md":8,
-                    "lg":8,
-                    "xs":8
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // number
@@ -863,48 +1328,93 @@
                 "number1Txt": {
                     "type": "staticText",
                     "text": "element to input a number",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "number1": {
                     "type": "number",
                     "label": "number",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "number1Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.number1}"
+                    "pattern": "stored value is ${data.number1}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "number2Txt": {
                     "type": "staticText",
                     "text": "element to input a number limited to -5 to +150 ",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "number2": {
                     "type": "number",
                     "label": "number",
                     "min":-5,
                     "max":150,
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "number2Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.number2}"
+                    "pattern": "stored value is ${data.number2}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "number3Txt": {
                     "type": "staticText",
                     "text": "element to input a number with step size 0,001",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "number3": {
                     "type": "number",
                     "label": "number",
                     "min":-5,
                     "step":0.001,
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "number3Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.number3}"
+                    "pattern": "stored value is ${data.number3}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // password (repeat - if repeat password must be shown with the same width settings)
@@ -916,37 +1426,72 @@
                 "password1Txt": {
                     "type": "staticText",
                     "text": "element to input a password",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "password": {
                     "type": "password",
                     "label": "password",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "password1Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.password1}"
+                    "pattern": "stored value is ${data.password1}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "password2Txt": {
                     "type": "staticText",
                     "text": "element to input a password, add repeat field and visible button",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "password2": {
                     "type": "password",
                     "label": "password",
                     "repeat": true,
                     "visible": true,
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "password2Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.password2}"
+                    "pattern": "stored value is ${data.password2}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "passwordInfo": {
                     "type": "staticText",
                     "text": "Note that passwords must be store encrypted using io-package.json config",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // port - Special input for ports. It checks automatically if port is used by other instances and shows warning
@@ -958,20 +1503,31 @@
                 "portTxt": {
                     "type": "staticText",
                     "text": "PORT is used to specify a port. It checks automatically if port is used by other instances and shows warning.",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "port": {
                     "type": "port",
                     "label": "select a port",
-                    "sm":3,
-                    "md":3,
-                    "lg":3,
-                    "xs":3,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "portVal": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.port}"
+                    "pattern": "stored value is ${data.port}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // select
@@ -983,7 +1539,12 @@
                 "selectTxt": {
                     "type": "staticText",
                     "text": "select a value from the configured list.",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "select": {
                     "type": "select",
@@ -993,15 +1554,21 @@
                         {"label": "option 2", "value": 2},
                         {"label": "option 3", "value": 3}
                     ],
-                    "sm":3,
-                    "md":3,
-                    "lg":3,
-                    "xs":3,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "selectVal": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.select}"
+                    "pattern": "stored value is ${data.select}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // setState - button that set instance's state
@@ -1013,7 +1580,12 @@
                 "setState1Txt": {
                     "type": "staticText",
                     "text": "button that sets an instance's state demo_state_1 to 'Demo val' (fixed at jsonconfig-demo.0)",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "setState1": {
                     "type": "setState",
@@ -1021,24 +1593,44 @@
                     "id": "jsonconfig-demo.0.test.demo_1",
                     "ack": true,
                     "val": "Demo value",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "setState2Txt": {
                     "type": "staticText",
                     "text": "button that sets an instance's state demo_state_2 to text entered by user (fixed at jsonconfig-demo.0)",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "setState2t": {
                     "type": "text",
                     "label": "text",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "setState2": {
                     "type": "setState",
                     "label": "set it",
                     "id": "jsonconfig-demo.%INSTANCE%.test.demo_2",
                     "ack": false,
-                    "val": "data.setState2t"
+                    "val": "data.setState2t",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // slider - show slider (only Admin6)
@@ -1052,26 +1644,51 @@
                     "text": "WARNING: element SLIDER currently has some known issues, i.e range does not work as expected",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "slider1Txt": {
                     "type": "staticText",
                     "text": "shift slider to select a value, default range is 0 to 100",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "slider1": {
                     "type": "slider",
                     "label": "select by shifting",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "slider1Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.slider1}"
+                    "pattern": "stored value is ${data.slider1}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "slider2Txt": {
                     "type": "staticText",
                     "text": "shift slider to select a value, different range (-10 to +80, step 0,1)",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "slider2": {
                     "type": "slider",
@@ -1079,11 +1696,21 @@
                     "min": -25,
                     "max": 80,
                     "step":0.1,
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "slider2Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.slider2}"
+                    "pattern": "stored value is ${data.slider2}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 // text - Text component
@@ -1095,80 +1722,160 @@
                 "text1Txt": {
                     "type": "staticText",
                     "text": "standard text field for data input",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "text1": {
                     "type": "text",
                     "label": "Textinput",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "text1Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.text1}"
+                    "pattern": "stored value is ${data.text1}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "text2Txt": {
                     "type": "staticText",
                     "text": "text fields can be disabled and hidden",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "text2c": {
                     "type": "checkbox",
                     "label": "click to enable",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "text2": {
                     "type": "text",
                     "label": "Textinput",
-                    "disabled": "!!data.text2c"
+                    "disabled": "!!data.text2c",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "text2Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.text2}"
+                    "pattern": "stored value is ${data.text2}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "text3c": {
                     "type": "checkbox",
                     "label": "click to hide",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "text3": {
                     "type": "text",
                     "label": "Textinput",
                     "hidden": "data.text3c",
-                    "hideOnlyControl": true
+                    "hideOnlyControl": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "text3Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.text3}"
+                    "pattern": "stored value is ${data.text3}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "text4Txt": {
                     "type": "staticText",
                     "text": "Text fields can be readonly",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "text4": {
                     "type": "text",
                     "label": "Textinput",
                     "readOnly": true,
-                    "default": "some default text"
+                    "default": "some default text",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "text4Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.text4}"
+                    "pattern": "stored value is ${data.text4}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "text5Txt": {
                     "type": "staticText",
                     "text": "Multiline text fields are possible too (here 3 to 7 rows)",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "text5": {
                     "type": "text",
                     "label": "Textinput",
                     "minRows":3,
-                    "maxRows":7
+                    "maxRows":7,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "text5Val": {
                     "type": "pattern",
-                    "pattern": "stored value is ${data.text5}"
+                    "pattern": "stored value is ${data.text5}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 }
             }
         },
@@ -1180,13 +1887,23 @@
                 "introSendToTxt": {
                     "type": "staticText",
                     "text": "Check adapter log for messages transmitted to adapter",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "introSendToWarning": {
                     "type": "staticText",
                     "text": "WARNING: all sendTo elements requires a running adapter instance",
                     "hidden": "_alive",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 "sendToHdr": {
@@ -1197,18 +1914,33 @@
                 "SendTo1Txt": {
                     "type": "staticText",
                     "text": "sendTo send 2 text filed contents to adapter. Result is filled into third field.",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "sendTo1a": {
                     "type": "text",
                     "label": "Text 1",
                     "default": "Text #1",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "sendTo1b": {
                     "type": "text",
                     "label": "Text 1",
-                    "default": "Text #2"
+                    "default": "Text #2",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "sendTo1": {
                     "type": "sendTo",
@@ -1217,22 +1949,33 @@
                     "showProcess": true,
                     "command": "sendTo1",
                     "jsonData": "{ \"data1\": \"${data.sendTo1a}\", \"data2\": \"${data.sendTo1b}\" }",
-                    "useNative": true
+                    "useNative": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "sendTo1Ret": {
                     "type": "text",
                     "label": "Result",
                     "readOnly": true,
-                    "sm":4,
-                    "md":4,
-                    "lg":4,
-                    "xs":4,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "SendTo2Txt": {
                     "type": "staticText",
                     "text": "select result type and send it to adapter.",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "sendTo2a": {
                     "type": "select",
@@ -1241,10 +1984,11 @@
                         {"label": "OK", "value":1},
                         {"label": "FAIL", "value":0}
                     ],
-                    "sm":3,
-                    "md":3,
-                    "lg":3,
-                    "xs":3,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4,
                     "newLine": true
                 },
                 "sendTo2": {
@@ -1253,7 +1997,12 @@
                     "variant": "outlined",
                     "showProcess": true,
                     "command": "sendTo2",
-                    "jsonData": "{ \"data\": \"${data.sendTo2a}\"}"
+                    "jsonData": "{ \"data\": \"${data.sendTo2a}\"}",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
 
                 "textSendToHdr": {
@@ -1264,18 +2013,33 @@
                 "textSendTo1Txt": {
                     "type": "staticText",
                     "text": "textSendTo displays a static text returned by adapter. It will update whenever checkbox is clicked",
-                    "newLine": true
+                    "newLine": true,
+                   "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
                 "textSendTo1c":{
                     "type": "checkbox",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
                 "textSendTo1":{
                     "type": "textSendTo",
                     "label": "lblStationId",
                     "command": "textSendTo1",
                     "jsonData": "{\"username\": \"aaa\", \"password\": \"bbb\" }",
-                    "alsoDependsOn": ["textSendTo1c"]
+                    "alsoDependsOn": ["textSendTo1c"],
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 4
                 },
             }
         },
@@ -1293,7 +2057,12 @@
                 "introTable1Txt1": {
                     "type": "staticText",
                     "text": "This is a classic table with some elements. Add rows by clicking at + sign. <br>Columns Unique Text and Restructured Text have built in validations and error messages.",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 "table1Err1": {
@@ -1303,7 +2072,12 @@
                     "hidden": "const x={}; for(let ii=0; data.table1 && ii<data.table1.length; ii++){const t=data.table1[ii].table1Unique; if (x[t]==='x') return false; x[t]='x';}; return true;",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 "table1Err2": {
@@ -1313,7 +2087,12 @@
                     "hidden": "if (!data.table1) return true; for (const c of data.table1) {if (c.table1Char !== '' && !c.table1Char.match(/^[A-Za-z0-9]([A-Za-z0-9-_])*$/)) return false;}; return true;",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 "table1": {
@@ -1322,13 +2101,14 @@
                     "sm": 12,
                     "md": 12,
                     "lg": 12,
+                    "xl": 12,
                     "label": "",
                     "showSecondAddAt": 5,
                     "items": [
                         {
                             "type": "checkbox",
                             "attr": "table1Chk",
-                            "width": "5% ",
+                            "width": "16% ",
                             "title": "checkbox",
                             "tooltip": "Click on it",
                             "filter": false,
@@ -1338,7 +2118,7 @@
                         {
                             "type": "checkbox",
                             "attr": "table1ChkHide",
-                            "width": "5% ",
+                            "width": "16% ",
                             "title": "hide",
                             "tooltip": "click to hide fields",
                             "filter": false,
@@ -1348,7 +2128,7 @@
                         {
                             "type": "text",
                             "attr": "table1Text1",
-                            "width": "8% ",
+                            "width": "16% ",
                             "title": "Text",
                             "tooltip": "enter any text",
                             "filter": false,
@@ -1358,7 +2138,7 @@
                         {
                             "type": "text",
                             "attr": "table1Unique",
-                            "width": "8% ",
+                            "width": "17% ",
                             "title": "Unique Text",
                             "tooltip": "enter any text",
                             "filter": false,
@@ -1370,7 +2150,7 @@
                         {
                             "type": "text",
                             "attr": "table1Char",
-                            "width": "8% ",
+                            "width": "17% ",
                             "title": "Restricted Text",
                             "tooltip": "enter text with 'A-Za-z0-9_' only",
                             "filter": false,
@@ -1382,7 +2162,7 @@
                         {
                             "type": "number",
                             "attr": "table1Num",
-                            "width": "6% ",
+                            "width": "16% ",
                             "title": "Number",
                             "tooltip": "enter a number",
                             "hidden": "data.table1ChkHide",
@@ -1404,7 +2184,12 @@
                 "introTable2Txt2": {
                     "type": "staticText",
                     "text": "This is a table with some preloaded and fixed rows; no deletes or additions.<br>Configure content at io-package.json.",
-                    "newLine": true
+                    "newLine": true,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 "table2": {
@@ -1413,13 +2198,14 @@
                     "sm": 12,
                     "md": 12,
                     "lg": 12,
+                    "xl": 12,
                     "label": "",
                     "noDelete": true,
                     "items": [
                         {
                             "type": "checkbox",
                             "attr": "table2Chk",
-                            "width": "5% ",
+                            "width": "50% ",
                             "title": "checkbox (changeable)",
                             "tooltip": "Click on it",
                             "filter": false,
@@ -1429,7 +2215,7 @@
                         {
                             "type": "text",
                             "attr": "table2Text1",
-                            "width": "8% ",
+                            "width": "50% ",
                             "title": "Text (fixed, not changeable)",
                             "tooltip": "enter any text",
                             "filter": false,
@@ -1450,10 +2236,11 @@
                 "idx_a01": {
                     "type": "staticText",
                     "text": "alive",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_a01x": {
@@ -1461,17 +2248,23 @@
                     "text": "see tab INFOS",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                   "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // autocomplete
                 "idx_a02": {
                     "type": "staticText",
                     "text": "autocomplete",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_a02x": {
@@ -1479,17 +2272,23 @@
                     "text": "see tab INPUT",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // autocompleteSendTo`
                 "idx_a03": {
                     "type": "staticText",
                     "text": "autocompleteSendTo",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
 
@@ -1497,10 +2296,11 @@
                 "idx_c01": {
                     "type": "staticText",
                     "text": "certCollection",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
 
@@ -1508,10 +2308,11 @@
                 "idx_c02": {
                     "type": "staticText",
                     "text": "certificate",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
 
@@ -1519,10 +2320,11 @@
                 "idx_c03": {
                     "type": "staticText",
                     "text": "certificates",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
 
@@ -1530,10 +2332,11 @@
                 "idx_c04": {
                     "type": "staticText",
                     "text": "checkbox",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_c04x": {
@@ -1541,17 +2344,23 @@
                     "text": "see tab INPUT",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // checkLicense - Very special component to check the license online. It's required exactly `license` and `useLicenseManager` properties in native.
                 "idx_c05": {
                     "type": "staticText",
                     "text": "checkLicense",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
 
@@ -1559,10 +2368,11 @@
                 "idx_c06": {
                     "type": "staticText",
                     "text": "chips",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_c06x": {
@@ -1570,17 +2380,23 @@
                     "text": "see tab PICKERS",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // color - color picker
                 "idx_c07": {
                     "type": "staticText",
                     "text": "color",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_c07x": {
@@ -1588,17 +2404,23 @@
                     "text": "see tab PICKERS",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // coordinates
                 "idx_c08": {
                     "type": "staticText",
                     "text": "coordinates",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_c08x": {
@@ -1606,17 +2428,23 @@
                     "text": "see tab PICKERS",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // cron
                 "idx_c09": {
                     "type": "staticText",
                     "text": "cron",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_c09x": {
@@ -1624,17 +2452,23 @@
                     "text": "see tab PICKERS",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // custom (only Admin6)
                 "idx_c10": {
                     "type": "staticText",
                     "text": "custom",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_c10x": {
@@ -1642,17 +2476,23 @@
                     "text": "currently no working example available",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // divider - horizontal line
                 "idx_d01": {
                     "type": "staticText",
                     "text": "divider",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_d01x": {
@@ -1660,17 +2500,23 @@
                     "text": "see tab STATIC",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // file (only Admin6)
                 "idx_f01": {
                     "type": "staticText",
                     "text": "file",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
 
@@ -1678,10 +2524,11 @@
                 "idx_f02": {
                     "type": "staticText",
                     "text": "fileSelector",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
 
@@ -1689,10 +2536,11 @@
                 "idx_f03": {
                     "type": "staticText",
                     "text": "func",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_f03x": {
@@ -1700,17 +2548,23 @@
                     "text": "see tab PICKERS",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // header
                 "idx_h01": {
                     "type": "staticText",
                     "text": "header",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_h01x": {
@@ -1718,7 +2572,12 @@
                     "text": "see all tabs",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
 
@@ -1726,10 +2585,11 @@
                 "idx_i01": {
                     "type": "staticText",
                     "text": "icon",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_i01x": {
@@ -1737,17 +2597,23 @@
                     "text": "not yet implemented",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // image - saves image as file of adapter.X object or as base64 in attribute
                 "idx_i02": {
                     "type": "staticText",
                     "text": "image",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
 
@@ -1755,10 +2621,11 @@
                 "idx_i03": {
                     "type": "staticText",
                     "text": "instance",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_i03x": {
@@ -1766,17 +2633,23 @@
                     "text": "see tab PICKERS",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // ip - bind address
                 "idx_i04": {
                     "type": "staticText",
                     "text": "ip",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_i04x": {
@@ -1784,17 +2657,23 @@
                     "text": "see tab PICKERS",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // json - json editor
                 "idx_j01": {
                     "type": "staticText",
                     "text": "json",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_j01x": {
@@ -1802,17 +2681,23 @@
                     "text": "see tab INPUT",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // language - select language
                 "idx_l01": {
                     "type": "staticText",
                     "text": "language",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_l01x": {
@@ -1820,17 +2705,23 @@
                     "text": "see tab PICKERS",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // number
                 "idx_n01": {
                     "type": "staticText",
                     "text": "number",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_n01x": {
@@ -1838,17 +2729,23 @@
                     "text": "see tab INPUT",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // objectId - object ID - show it with name, color and icon
                 "idx_o01": {
                     "type": "staticText",
                     "text": "objectId",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_o01x": {
@@ -1856,17 +2753,23 @@
                     "text": "see tab PICKERS",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // panel - Tab with items
                 "idx_p01": {
                     "type": "staticText",
                     "text": "panel",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_p01x": {
@@ -1874,17 +2777,23 @@
                     "text": "see all tabs",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // password (repeat - if repeat password must be shown with the same width settings)
                 "idx_p02": {
                     "type": "staticText",
                     "text": "password",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_p02x": {
@@ -1892,7 +2801,12 @@
                     "text": "see tab INPUT",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
 
@@ -1900,10 +2814,11 @@
                 "idx_p03": {
                     "type": "staticText",
                     "text": "pattern",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_p03x": {
@@ -1911,17 +2826,23 @@
                     "text": "see tab STATIC",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // port - Special input for ports. It checks automatically if port is used by other instances and shows warning
                 "idx_p04": {
                     "type": "staticText",
                     "text": "port",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
 
@@ -1929,10 +2850,11 @@
                 "idx_r01": {
                     "type": "staticText",
                     "text": "room",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_r01x": {
@@ -1940,17 +2862,23 @@
                     "text": "see tab PICKERS",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // select
                 "idx_s01": {
                     "type": "staticText",
                     "text": "select",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_s01x": {
@@ -1958,17 +2886,23 @@
                     "text": "see tab INPUT",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // selectSendTo
                 "idx_s02": {
                     "type": "staticText",
                     "text": "selectSendTo",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
 
@@ -1976,10 +2910,11 @@
                 "idx_s03": {
                     "type": "staticText",
                     "text": "sendto",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
 
@@ -1987,10 +2922,11 @@
                 "idx_s04": {
                     "type": "staticText",
                     "text": "setState",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_s04x": {
@@ -1998,17 +2934,23 @@
                     "text": "see tab INPUT",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // slider - show slider (only Admin6)
                 "idx_s05": {
                     "type": "staticText",
                     "text": "slider",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_s05x": {
@@ -2016,17 +2958,23 @@
                     "text": "see tab INPUT",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // staticImage - static image
                 "idx_s06": {
                     "type": "staticText",
                     "text": "staticImage",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_s06x": {
@@ -2034,17 +2982,23 @@
                     "text": "see tab STATIC",
                     "style": {
                         "color": "red"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // staticLink - static link
                 "idx_s07": {
                     "type": "staticText",
                     "text": "staticLink",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_s07x": {
@@ -2052,17 +3006,23 @@
                     "text": "see tab STATIC",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // staticText - static text like description
                 "idx_s08": {
                     "type": "staticText",
                     "text": "staticText",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_s08x": {
@@ -2070,7 +3030,12 @@
                     "text": "see tab STATIC",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
 
@@ -2078,10 +3043,11 @@
                 "idx_t01": {
                     "type": "staticText",
                     "text": "table",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_t01x": {
@@ -2089,17 +3055,23 @@
                     "text": "see tab TABLES",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // tabs - Tabs with items
                 "idx_t02": {
                     "type": "staticText",
                     "text": "tabs",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_t02x": {
@@ -2107,17 +3079,23 @@
                     "text": "see main configuration",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // text - Text component
                 "idx_t03": {
                     "type": "staticText",
                     "text": "text",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_t03x": {
@@ -2125,17 +3103,23 @@
                     "text": "see tab INPUT",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // textSendTo
                 "idx_t04": {
                     "type": "staticText",
                     "text": "textSendTo",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_t04x": {
@@ -2143,17 +3127,23 @@
                     "text": "see tab SEND TO",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // user - Select user from system.user. (With color and icon)
                 "idx_u01": {
                     "type": "staticText",
                     "text": "user",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_u01x": {
@@ -2161,17 +3151,23 @@
                     "text": "see tab PICKERS",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 },
 
                 // uuid - Show iobroker UUID
                 "idx_u02": {
                     "type": "staticText",
                     "text": "uuid",
-                    "sm":2,
-                    "md":2,
-                    "lg":2,
-                    "xs":2,
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6,
                     "newLine": true
                 },
                 "idx_u02x": {
@@ -2179,7 +3175,12 @@
                     "text": "see tab INFOS",
                     "style": {
                         "color": "green"
-                    }
+                    },
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 6,
+                    "xl": 6
                 }
             }
         }
