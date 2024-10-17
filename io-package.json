@@ -30,7 +30,6 @@
         "zh-cn": "初步释放"
       }
     },
-    "title": "jsonConfig demo only",
     "titleLang": {
       "en": "jsonConfig demo only",
       "de": "Nur jsonConfig-Demo",
@@ -63,15 +62,18 @@
       "jsonConfig demo",
       "demo adapter"
     ],
-    "license": "MIT",
+    "licenseInformation": {
+      "license":"MIT",
+      "type":"free"
+    },
     "platform": "Javascript/Node.js",
-    "main": "main.js",
     "icon": "jsonconfig-demo.png",
     "enabled": false,
     "messagebox": true,
     "extIcon": "https://raw.githubusercontent.com/mcm4iob/ioBroker.jsonconfig-demo/master/admin/jsonconfig-demo.png",
     "readme": "https://github.com/mcm4iob/ioBroker.jsonconfig-demo/blob/master/README.md",
     "loglevel": "info",
+    "tier": 3,
     "mode": "daemon",
     "type": "general",
     "compact": true,
