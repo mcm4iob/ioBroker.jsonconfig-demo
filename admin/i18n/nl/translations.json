@@ -1,5 +1,6 @@
 {
     "jsonconfig-demo adapter settings": "Adapterinstellingen voor jsonconfig-demo",
     "option1": "Optie 1",
-    "option2": "Optie 2"
+    "option2": "Optie 2",
+    "password": "wachtwoord"
 }

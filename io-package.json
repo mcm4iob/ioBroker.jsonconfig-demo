@@ -40,7 +40,8 @@
       "it": "jsonConfig solo demo",
       "es": "jsonConfig demostración solamente",
       "pl": "Tylko wersja demonstracyjna jsonConfig",
-      "zh-cn": "jsonConfig 仅演示"
+      "zh-cn": "jsonConfig 仅演示",
+      "uk": "лише демонстраційна версія jsonConfig"
     },
     "desc": {
       "en": "This adapter is a demo for json based config only.",
@@ -52,7 +53,8 @@
       "it": "Questo adattatore è una demo solo per la configurazione basata su json.",
       "es": "Este adaptador es una demostración solo para la configuración basada en json.",
       "pl": "Ten adapter jest wersją demonstracyjną tylko dla konfiguracji opartej na formacie json.",
-      "zh-cn": "此适配器仅是基于 json 的配置的演示。"
+      "zh-cn": "此适配器仅是基于 json 的配置的演示。",
+      "uk": "Цей адаптер є демонстраційним лише для конфігурації на основі json."
     },
     "authors": [
       "mcm1957 <mcm57@gmx.at>"
@@ -62,8 +64,8 @@
       "demo adapter"
     ],
     "licenseInformation": {
-      "license":"MIT",
-      "type":"free"
+      "license": "MIT",
+      "type": "free"
     },
     "platform": "Javascript/Node.js",
     "icon": "jsonconfig-demo.png",
