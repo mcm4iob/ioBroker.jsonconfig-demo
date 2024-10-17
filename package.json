@@ -9,6 +9,7 @@
   "homepage": "https://github.com/mcm4iob/ioBroker.jsonconfig-demo",
   "license": "MIT",
   "keywords": [
+    "ioBroker",
     "jsonConfig demo",
     "demo adapter"
   ],
