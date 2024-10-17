@@ -12,7 +12,7 @@
                 "lintToJson": {
                     "type": "staticLink",
                     "text": "link to file that describes this configuration",
-                    "href": "https://github.com/mcm1957/ioBroker.jsonconfig-demo/blob/main/admin/jsonConfig.json5",
+                    "href": "https://github.com/mcm4iob/ioBroker.jsonconfig-demo/blob/main/admin/jsonConfig.json5",
                     "icon": "info",
                     "xs": 12,
                     "sm": 12,
@@ -116,7 +116,7 @@
                 "staticImage": {
                     "type": "staticImage",
                     "label": "some picture",
-                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/admin/admin.png",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/packages/admin/admin/admin.png",
                     "newLine": true,
                     "src": "../../adapter/jsonconfig-demo/jsonconfig-demo.png",
                     "xs": 12,
@@ -144,7 +144,7 @@
                 "staticLink1": {
                     "type": "staticLink",
                     "text": "link to jsonConfig schema.md",
-                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/packages/jsonConfig/SCHEMA.md",
                     "icon": "info",
                     "newLine": true,
                     "xs": 12,
@@ -166,7 +166,7 @@
                 "staticLink2a": {
                     "type": "staticLink",
                     //"label": "link",
-                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/packages/jsonConfig/SCHEMA.md",
                     "button": true,
                     "icon": "auth",
                     "newLine": true,
@@ -179,7 +179,7 @@
                 "staticLink2b": {
                     "type": "staticLink",
                     //"label": "link",
-                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/packages/jsonConfig/SCHEMA.md",
                     "button": true,
                     "icon": "send",
                     "xs": 12,
@@ -191,7 +191,7 @@
                 "staticLink2c": {
                     "type": "staticLink",
                     //"label": "link",
-                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/packages/jsonConfig/SCHEMA.md",
                     "button": true,
                     "icon": "web",
                     "xs": 12,
@@ -203,7 +203,7 @@
                 "staticLink2d": {
                     "type": "staticLink",
                     //"label": "link",
-                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/packages/jsonConfig/SCHEMA.md",
                     "button": true,
                     "icon": "warning",
                     "xs": 12,
@@ -215,7 +215,7 @@
                 "staticLink2e": {
                     "type": "staticLink",
                     //"label": "link",
-                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/packages/jsonConfig/SCHEMA.md",
                     "button": true,
                     "icon": "error",
                     "xs": 12,
@@ -227,7 +227,7 @@
                 "staticLink2f": {
                     "type": "staticLink",
                     //"label": "link",
-                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/packages/jsonConfig/SCHEMA.md",
                     "button": true,
                     "icon": "info",
                     "xs": 12,
@@ -239,7 +239,7 @@
                 "staticLink2g": {
                     "type": "staticLink",
                     //"label": "link",
-                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/packages/jsonConfig/SCHEMA.md",
                     "button": true,
                     "icon": "search",
                     "xs": 12,
@@ -251,7 +251,7 @@
                 "staticLink2h": {
                     "type": "staticLink",
                     "text": "optional text possible",
-                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/src/src/components/JsonConfigComponent/SCHEMA.md",
+                    "href": "https://github.com/ioBroker/ioBroker.admin/blob/master/packages/jsonConfig/SCHEMA.md",
                     "button": true,
                     "icon": "info",
                     "newLine": true,
