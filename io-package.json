@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "jsonconfig-demo",
-    "version": "0.0.5",
+    "version": "0.1.0",
     "news": {
+      "0.1.0": {
+        "en": "Adapter requires at least js-controller 5 and node.js 18 now [#24]\nAdapter has been adjusted to responcify design guides\nLinks to schema have been fixed [#24]\nDependencies have been updated",
+        "de": "Adapter benötigt nun mindestens js-Controller 5 und node.js 18 [#24]\nAdapter wurde angepasst, um Design-Führungen ansprechen\nLinks zu Schema wurden behoben [#24]\nAbhängigkeiten wurden aktualisiert",
+        "ru": "Adapter requires at least js-controller 5 and node.js 18 now [#24]\nАдаптер корректировался, чтобы отреагировать на руководства по дизайну\nСсылки на схему были исправлены [#24]\nЗависимость обновлена",
+        "pt": "Adaptador requer pelo menos js-controller 5 e node.js 18 agora [#24]\nAdapter foi ajustado para responcificar guias de projeto\nLinks para o esquema foram corrigidos [#24]\nAs dependências foram atualizadas",
+        "nl": "Adapter vereist ten minste js-controller 5 en node.js 18 nu [#24]\nAdapter is aangepast om ontwerphandleidingen te verantwoorden\nLinks naar schema zijn vastgesteld [#24]\nAfhankelijkheden zijn bijgewerkt",
+        "fr": "Adaptateur nécessite au moins js-controller 5 et node.js 18 maintenant [#24]\nAdaptateur a été ajusté pour responcifier les guides de conception\nLes liens vers le schéma ont été corrigés [#24]\nLes dépendances ont été actualisées",
+        "it": "L'adattatore richiede almeno js-controller 5 e node.js 18 ora [#24]\nL'adattatore è stato regolato per correggere le guide di design\nI collegamenti allo schema sono stati fissati [#24]\nLe dipendenze sono state aggiornate",
+        "es": "Adaptador requiere al menos js-controller 5 y node.js 18 ahora [#24]\nAdaptador se ha ajustado para responder a las guías de diseño\nEnlaces al esquema han sido fijos [#24]\nSe han actualizado las dependencias",
+        "pl": "Adapter wymaga co najmniej kontrolera js- 5 i node.js 18 teraz [# 24]\nAdapter został dostosowany do reagowania przewodników projektowych\nLinki do schematów zostały ustalone [# 24]\nZaktualizowano zależności",
+        "uk": "Адаптер вимагає принаймні js-controller 5 і node.js 18 тепер [#24]\nПерехідник регульований для розвідувальних інструкцій\nПосилання на схему було виправлено [#24]\nЗалежність було оновлено",
+        "zh-cn": "适配器至少需要js控制器 5 和节点.js 18 现在 [# 24]\n调整了适应器以负责设计指南\n与计划的联系已经固定 [# 24]\n依赖关系已更新"
+      },
       "0.0.5": {
         "en": "Adapter has been moved to mcm4iob organisation\nDependencies have been updated",
         "de": "Adapter wurde auf mcm4iob Organisation verschoben\nAbhängigkeiten wurden aktualisiert",

@@ -23,7 +23,7 @@ Development is still IN PROGRESS
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.1.0 (2024-10-17)
 * (mcm1957) Adapter requires at least js-controller 5 and node.js 18 now [#24]
 * (simatec) Adapter has been adjusted to responcify design guides
 * (mcm1957) Links to schema have been fixed [#24]
