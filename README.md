@@ -23,6 +23,12 @@ Development is still IN PROGRESS
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (mcm1957) Adapter requires at least js-controller 5 and node.js 18 now [#24]
+* (simatec) Adapter has been adjusted to responcify design guides
+* (mcm1957) Links to schema have been fixed [#24]
+* (mcm1957) Dependencies have been updated
+
 ### 0.0.5 (2023-12-09)
 * (mcm1957) Adapter has been moved to mcm4iob organisation
 * (mcm1957) Dependencies have been updated
